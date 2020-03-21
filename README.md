@@ -1,4 +1,4 @@
-# learn-enough-vue
+# learn-enough
 
 ## Project setup
 ```

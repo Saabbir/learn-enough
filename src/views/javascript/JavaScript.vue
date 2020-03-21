@@ -225,7 +225,7 @@
                   <code>new</code> keyword) are string object.</p>
                 <h3 class="u-middle-el">Example:</h3>
                 <p>
-                  <pre class="language-javascript"><code class="language-javascript">new String('Saabbir Hossain')</code></pre>
+                  <pre class="language-javascript line-numbers"><code>new String('Saabbir Hossain')</code></pre>
                 </p>
                 <h3 class="u-middle-el">Note:</h3>
                 <ul class="u-bottom-el">
@@ -245,7 +245,7 @@
             <section class="u-bottom-el">
               <div class="c-box">
                 <h2 class="u-top-el">String Prototype Chain:</h2>
-                <pre class="language-javascript line-numbers"><code class="language-javascript">new String('string').__proto__ === String.prototype
+                <pre class="language-javascript line-numbers"><code>new String('string').__proto__ === String.prototype
 String.prototype.__proto__ === Object.prototype
 Object.prototype.__proto__ === null</code></pre>
               </div><!-- /.c-box -->
@@ -583,6 +583,9 @@ Object.prototype.__proto__ === null</code></pre>
 
 <script>
   export default {
-    name: 'JavaScript'
+    name: 'JavaScript',
+    mounted() {
+      window.Prism.highlightAll()
+    }
   }
 </script>

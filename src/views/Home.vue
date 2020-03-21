@@ -1,21 +1,24 @@
 <template>
-  <div class="u-section-padding u-bg-gray u-flex-grow-1">
-    <div class="l-wrap">
-      <div class="l-row l-row--equal-height">
-        <div
-          v-for="(subject, index) in subjects" :key="index" 
-          class="l-col l-col--sm-6 l-col--md-4">
-          <div class="c-card">
-            <router-link :to="subject.link" class="c-card__link"></router-link>
-            <div class="c-card__icon">
-              <i :class="subject.icon"></i>
-            </div>
-            <h4 class="c-card__title">{{ subject.title }}</h4>
-            <p class="c-card__text">{{ subject.description }}</p>
-          </div><!-- /.c-card -->
-        </div><!-- /.l-col -->
-      </div><!-- /.l-row -->
-    </div><!-- /.l-wrap -->
+  <div class="c-home">
+    <div class="u-section-padding u-bg-gray u-flex-grow-1">
+      <div class="l-wrap">
+        <div class="l-row l-row--equal-height">
+          <div
+            v-for="(subject, index) in subjects" :key="index" 
+            class="l-col l-col--sm-6 l-col--md-4">
+            <div class="c-card">
+              <router-link :to="subject.link" class="c-card__link"></router-link>
+              <div class="c-card__icon">
+                <i :class="subject.icon"></i>
+              </div>
+              <h4 class="c-card__title">{{ subject.title }}</h4>
+              <p class="c-card__text">{{ subject.description }}</p>
+            </div><!-- /.c-card -->
+          </div><!-- /.l-col -->
+        </div><!-- /.l-row -->
+      </div><!-- /.l-wrap -->
+    </div>
+    <app-footer></app-footer>
   </div>
 </template>
 
@@ -60,12 +63,17 @@ const subjects = [
   },
 ]
 
+import Footer from '@/components/Footer'
+
 export default {
   name: 'Home',
   data() {
     return {
       subjects
     }
+  },
+  components: {
+    'app-footer': Footer
   }
 }
 </script>

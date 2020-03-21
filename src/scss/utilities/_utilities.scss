@@ -15,3 +15,7 @@
 .u-bg-gray {
   background-color: #edeff0;
 }
+
+.u-fill-viewport-gap {
+  min-height: calc(100vh - 70px);
+}

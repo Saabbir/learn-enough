@@ -1,0 +1,27 @@
+.c-sidenav {
+  position: fixed;
+  width: 300px;
+  top: 70px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-y: auto;
+  border-right: 1px solid #e0e0e0;
+
+  ul {
+    margin: 0;
+    padding: 30px 0;
+    list-style: none;
+  }
+
+  li {
+    cursor: pointer;
+    padding: 10px 30px;
+  }
+
+  li:hover,
+  li.active {
+    color: #000;
+    background-color: #e0e0e0;
+  }
+}

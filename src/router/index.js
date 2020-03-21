@@ -11,21 +11,38 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  },
-  {
     path: '/command-line',
     name: 'CommandLine',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "command-line" */ '../views/command-line/CommandLine.vue')
-  }
+  },
+  {
+    path: '/text-editor',
+    name: 'TextEditor',
+    component: () => import(/* webpackChunkName: "text-editor" */ '../views/TextEditor.vue')
+  },
+  {
+    path: '/git',
+    name: 'Git',
+    component: () => import(/* webpackChunkName: "git" */ '../views/Git.vue')
+  },
+  {
+    path: '/javascript',
+    name: 'JavaScript',
+    component: () => import(/* webpackChunkName: "javascript" */ '../views/JavaScript.vue')
+  },
+  {
+    path: '/php',
+    name: 'Php',
+    component: () => import(/* webpackChunkName: "php" */ '../views/Php.vue')
+  },
+  {
+    path: '/wordpress',
+    name: 'WordPress',
+    component: () => import(/* webpackChunkName: "wordpress" */ '../views/WordPress.vue')
+  },
 ]
 
 const router = new VueRouter({

@@ -6,7 +6,7 @@
           v-for="(subject, index) in subjects" :key="index" 
           class="l-col l-col--sm-6 l-col--md-4">
           <div class="c-card">
-            <a href="#" class="c-card__link"></a>
+            <router-link :to="subject.link" class="c-card__link"></router-link>
             <div class="c-card__icon">
               <i :class="subject.icon"></i>
             </div>
@@ -25,32 +25,38 @@ const subjects = [
   {
     title: 'Learn enough command line',
     description: 'Learn enough command-line to work with unix environments and windows command prompt.',
-    icon: 'fas fa-terminal'
+    icon: 'fas fa-terminal',
+    link: {name: 'CommandLine'},
   },
   {
     title: 'Learn enough text editor',
     description: 'Learn the basics functionality and keyboard shortcuts of all the modern text-editor has.',
-    icon: 'fas fa-edit'
+    icon: 'fas fa-edit',
+    link: {name: 'TextEditor'},
   },
   {
     title: 'Learn enough Git',
     description: 'Learn enough git to collborate in projects and work with fellow team members. Learn most used git commands in day-to-day basis.',
-    icon: 'fab fa-git-square'
+    icon: 'fab fa-git-square',
+    link: {name: 'Git'},
   },
   {
     title: 'Learn enough JavaScript',
     description: 'Learn enough JavaScript to know how to solve problems using documentation. Understand the fundamental concepts.',
-    icon: 'fab fa-js-square'
+    icon: 'fab fa-js-square',
+    link: {name: 'JavaScript'},
   },
   {
     title: 'Learn enough PHP',
     description: 'Learn enough PHP to build simple yet beautiful working websites. Learn the similarities between JavaScript and PHP.',
-    icon: 'fab fa-php'
+    icon: 'fab fa-php',
+    link: {name: 'Php'},
   },
   {
     title: 'Learn enough WordPress',
     description: 'Learn enough WordPress to create any type of website as quickly as possible.',
-    icon: 'fab fa-wordpress'
+    icon: 'fab fa-wordpress',
+    link: {name: 'WordPress'},
   },
 ]
 

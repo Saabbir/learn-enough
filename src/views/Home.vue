@@ -1,5 +1,5 @@
 <template>
-  <div class="u-section-padding u-bg-gray">
+  <div class="u-section-padding u-bg-gray u-flex-grow-1">
     <div class="l-wrap">
       <div class="l-row l-row--equal-height">
         <div class="l-col l-col--sm-6 l-col--md-4">

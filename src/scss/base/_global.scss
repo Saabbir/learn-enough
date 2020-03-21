@@ -8,6 +8,13 @@
   }
 }
 
+#app {
+  padding-top: 70px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 blockquote {
   border-left: 5px solid #000;
   margin: 0;

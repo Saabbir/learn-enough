@@ -31,7 +31,7 @@ const routes = [
   {
     path: '/javascript',
     name: 'JavaScript',
-    component: () => import(/* webpackChunkName: "javascript" */ '../views/JavaScript.vue')
+    component: () => import(/* webpackChunkName: "javascript" */ '../views/javascript/JavaScript.vue')
   },
   {
     path: '/php',

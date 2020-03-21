@@ -1,0 +1,11 @@
+.c-box {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: $boxShadow;
+
+  blockquote {
+    background-color: #edeff0;
+    box-shadow: none;
+  }
+}

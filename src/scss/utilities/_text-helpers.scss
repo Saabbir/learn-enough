@@ -1,0 +1,47 @@
+.u-text-right {
+  text-align: right !important;
+}
+
+.u-text-center {
+  text-align: center !important;
+}
+
+.u-text-uppercase {
+  text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  .u-text-center-below-md {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-text-center-below-sm {
+    text-align: center;
+  }
+
+  .u-hidden-below-sm {
+    display: none;
+  }
+}
+
+.u-text-normal {
+  font-weight: 400;
+}
+
+.u-text-semibold {
+  font-weight: 600 !important;
+}
+
+.u-text-bold {
+  font-weight: 700;
+}
+
+.u-list-type-upper-alpha {
+  list-style-type: upper-alpha;
+}
+
+.u-list-position-inside {
+  list-style-position: inside;
+}

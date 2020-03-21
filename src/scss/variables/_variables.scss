@@ -1,0 +1,7 @@
+@import './colors';
+@import './typography';
+
+$totalColumn: 12;
+$columnWidth: (1 / $totalColumn * 100%);
+
+$boxShadow: 0 2px 4px rgba(0,0,0,.1);

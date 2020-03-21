@@ -1,0 +1,59 @@
+.o-button {
+  cursor: pointer;
+  border: 1px solid transparent;
+  text-align: center;
+  white-space: nowrap;
+  max-width: 100%;
+  height: 50px;
+  font: 700 18px/50px $nunito;
+  min-width: 140px;
+  padding: 0 25px;
+  border-radius: 25px;
+  text-decoration: none;
+
+  @media (min-width: 1200px) {
+    font: 700 20px/50px $nunito;
+  }
+
+  span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &--secondary {
+    border-color: #fff;
+    color: #fff;
+    background-color: $secondaryColor;
+  }
+
+  &--outline-white {
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent;
+    height: 60px;
+    border-radius: 30px;
+    padding: 0 30px;
+    display: inline-flex;
+    font: bold 18px/60px $nunito;
+    transition: .2s;
+
+
+    &:hover,
+    &:focus {
+      color: #000;
+      border-color: #000;
+      background-color: #fff;
+    }
+
+    @media (min-width: 576px) {
+      height: 72px;
+      border-radius: 36px;
+      padding: 0 45px;
+      font: bold 20px/72px $nunito;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

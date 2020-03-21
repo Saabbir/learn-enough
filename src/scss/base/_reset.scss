@@ -1,3 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 70px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+  display: inline-block;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    color: red;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+}
+
+pre[class*=language-] {
+  border-radius: 4px;
+}
+
+*+p {
+  margin-top: 20px;
 }

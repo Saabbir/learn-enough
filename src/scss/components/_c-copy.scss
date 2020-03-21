@@ -1,0 +1,14 @@
+.c-copy {
+
+  ul,
+  ol {
+    li:not(:last-child) {
+      margin-bottom: 6px;
+    }
+
+    ul,
+    ol {
+      margin-top: 6px;
+    }
+  }
+}

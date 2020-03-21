@@ -1,0 +1,44 @@
+.u-overflow-hidden {
+  overflow: hidden;
+}
+
+.u-reset-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.u-img-fluid {
+  width: 100%;
+}
+
+.u-img-responsive {
+  display: block;
+  max-width: 100%;
+}
+
+.u-lh-0 {
+  line-height: 0;
+}
+
+.u-first-letter {
+  &::first-letter {
+    color: red;
+    font-size: 40px;
+  }
+}
+
+.u-section-divider {
+  margin: 30px 0;
+  border-top: 1px dashed #e0e0e0;
+}
+
+.u-underline {
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #000;
+}
+
+.u-overline {
+  border-top: 1px dashed #000;
+  padding-top: 10px;
+}

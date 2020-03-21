@@ -1,0 +1,53 @@
+.c-toc {
+  ol {
+    counter-reset: item;
+    list-style-type: none;
+
+    &>li {
+      &::before {
+        content: counters(item, ".") ". ";
+        counter-increment: item;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+
+    ol,
+    ul {
+      margin-top: 8px;
+    }
+  }
+
+  &--lg {
+    ol {
+      font-size: 20px;
+      font-weight: 700;
+      // text-transform: uppercase;
+
+      li {
+        &::before {
+          font-weight: 700;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+
+      ol,
+      ul {
+        margin-top: 10px;
+        font-size: .9em;
+        font-weight: normal;
+        text-transform: none;
+
+        ol,
+        ul {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}

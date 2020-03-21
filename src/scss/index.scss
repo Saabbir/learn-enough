@@ -1,1 +1,31 @@
-@import './base/reset';
+// Helpers
+// -------
+@import './helpers/helpers';
+
+// Variables
+// ---------
+@import './variables/variables';
+
+// Reset and base files
+// --------------------
+@import './base/base';
+
+// Layouts and grid
+// ----------------
+@import './layouts/layouts';
+
+// Objects
+// -------
+@import './objects/objects';
+
+// Components
+// ----------
+@import './components/components';
+
+// Wrappers
+// ----------
+@import './wrappers/wrapper-classes';
+
+// Utilities
+// ----------
+@import './utilities/utilities';

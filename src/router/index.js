@@ -36,7 +36,7 @@ const routes = [
   {
     path: '/php',
     name: 'Php',
-    component: () => import(/* webpackChunkName: "php" */ '../views/Php.vue')
+    component: () => import(/* webpackChunkName: "php" */ '../views/php/Php.vue')
   },
   {
     path: '/wordpress',

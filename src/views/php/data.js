@@ -121,6 +121,10 @@ const data = {
       description: 'Join array elements with a string'
     },
     {
+      name: 'explode()',
+      description: 'Split a string by a string'
+    },
+    {
       name: 'ucwords()',
       description: 'Uppercase the first character of each word in a string'
     },
@@ -136,6 +140,14 @@ const data = {
       name: 'strpos()',
       description: "Find the position of the first occurrence of a substring in a string"
     },
+    {
+      name: 'str_replace()',
+      description: "Replace all occurrences of the search string with the replacement string"
+    },
+    {
+      name: 'preg_replace()',
+      description: "Perform a regular expression search and replace"
+    },
   ],
   arrayFunctions: [
     {
@@ -149,6 +161,10 @@ const data = {
     {
       name: 'count()',
       description: "Count all elements in an array, or something in an object"
+    },
+    {
+      name: 'end()',
+      description: "Set the internal pointer of an array to its last element"
     },
     {
       name: 'extract()',
@@ -213,6 +229,26 @@ const data = {
     {
       name: 'define()',
       description: 'Defines a named constant'
+    },
+    {
+      name: 'mail()',
+      description: 'Send mail'
+    },
+    {
+      name: 'header()',
+      description: 'Send a raw HTTP header'
+    },
+    {
+      name: 'session_start()',
+      description: 'Start new or resume existing session'
+    },
+    {
+      name: 'session_destroy()',
+      description: 'Destroys all data registered to a session'
+    },
+    {
+      name: 'setcookie()',
+      description: 'Send a cookie'
     },
   ]
 }

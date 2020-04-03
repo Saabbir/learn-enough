@@ -167,6 +167,54 @@
               </table>
             </div><!-- /.c-table-responsive -->
 
+            <!-- PHP Superglobals -->
+            <div class="c-table-responsive u-middle-el">
+              <table class="c-table">
+                <caption>
+                  <a href="https://www.php.net/manual/en/language.variables.superglobals.php" target="_blank">PHP Superglobal Variables</a>
+                </caption>
+                <thead>
+                  <tr>
+                    <th>Superglobal Variable Name</th>
+                    <th>Short Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code class="inline">$_SERVER</code></td>
+                    <td>Server and execution environment information</td>
+                  </tr>
+                  <tr>
+                    <td><code class="inline">$_GET</code></td>
+                    <td>HTTP GET variables</td>
+                  </tr>
+                  <tr>
+                    <td><code class="inline">$_POST</code></td>
+                    <td>HTTP POST variables</td>
+                  </tr>
+                  <tr>
+                    <td><code class="inline">$_SESSION</code></td>
+                    <td>Session variables</td>
+                  </tr>
+                  <tr>
+                    <td><code class="inline">$_COOKIE</code></td>
+                    <td>HTTP Cookies</td>
+                  </tr>
+                  <tr>
+                    <td><code class="inline">$_REQUEST</code></td>
+                    <td>HTTP Request variables</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="2">
+                      <p>Several predefined variables in PHP are "superglobals", which means they are available in all scopes throughout a script.</p>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div><!-- /.c-table-responsive -->
+
           </article>
 
         </div><!-- /.l-col -->

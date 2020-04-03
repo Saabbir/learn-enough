@@ -52,12 +52,22 @@
                 In PHP, semicolon is a must for many cases.
               </p>
 
+              <p>
+                In PHP, we use <code class="inline">.</code> sign for concatenation.
+              </p>
+
+              <p>
+                In PHP, we use <code class="inline">-></code> sign to access an object property value. It's equivalent of JavaScript's <code class="inline">.</code> notation.
+              </p>
+
             </section>
 
             <!-- Built-in PHP Constructs -->
             <div class="c-table-responsive u-middle-el">
               <table class="c-table">
-                <caption>Built-in PHP Constructs</caption>
+                <caption>
+                  <a href="https://www.php.net/manual/en/language.control-structures.php" target="_blank">Built-in PHP Constructs (control structures)</a>
+                </caption>
                 <thead>
                   <tr>
                     <th>Construct</th>
@@ -73,10 +83,33 @@
               </table>
             </div><!-- /.c-table-responsive -->
 
+            <!-- Built-in PHP Variable Handling Functions -->
+            <div class="c-table-responsive u-middle-el">
+              <table class="c-table">
+                <caption>
+                  <a href="https://www.php.net/manual/en/ref.var.php" target="_blank">Built-in PHP Variable Handling Functions</a>
+                </caption>
+                <thead>
+                  <tr>
+                    <th>Function Name</th>
+                    <th>Short Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="(func, index) in data.variableHandlingFunctions" :key="index">
+                    <td><code class="inline">{{ func.name }}</code></td>
+                    <td>{{ func.description }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div><!-- /.c-table-responsive -->
+
             <!-- Built-in PHP String Functions -->
             <div class="c-table-responsive u-middle-el">
               <table class="c-table">
-                <caption>Built-in PHP String Functions</caption>
+                <caption>
+                  <a href="https://www.php.net/manual/en/ref.strings.php" target="_blank">Built-in PHP String Functions</a>
+                </caption>
                 <thead>
                   <tr>
                     <th>Function Name</th>
@@ -95,7 +128,9 @@
             <!-- Built-in PHP Array Functions -->
             <div class="c-table-responsive u-middle-el">
               <table class="c-table">
-                <caption>Built-in PHP Array Functions</caption>
+                <caption>
+                  <a href="https://www.php.net/manual/en/ref.array.php" target="_blank">Built-in PHP Array Functions</a>
+                </caption>
                 <thead>
                   <tr>
                     <th>Function Name</th>
@@ -114,7 +149,9 @@
             <!-- Built-in PHP Miscellaneous Functions -->
             <div class="c-table-responsive u-middle-el">
               <table class="c-table">
-                <caption>Built-in PHP Miscellaneous Functions</caption>
+                <caption>
+                  <a href="https://www.php.net/manual/en/ref.misc.php" target="_blank">Built-in PHP Miscellaneous Functions</a>
+                </caption>
                 <thead>
                   <tr>
                     <th>Function Name</th>

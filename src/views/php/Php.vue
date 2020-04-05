@@ -60,6 +60,20 @@
                 In PHP, we use <code class="inline">-></code> sign to access an object property value. It's equivalent of JavaScript's <code class="inline">.</code> notation.
               </p>
 
+              <p>
+                PHP is not case sensitive. However PHP variables are case sensitive.
+              </p>
+
+              <p>PHP whitespace independent.</p>
+
+              <p>
+                In PHP, we can use <code class="inline">$array[]</code> this syntax to push an item to the the array.
+              </p>
+
+              <p>
+                In PHP, we use <code class="inline">=></code> fat arrow syntax to associate key with value inside associative array. It's equivalent of JavaScript's <code class="inline">:</code> colon syntax inside object literal. Associative arrays in PHP are equivalent of JavaScript's object literal.
+              </p>
+
             </section>
 
             <!-- Built-in PHP Constructs -->

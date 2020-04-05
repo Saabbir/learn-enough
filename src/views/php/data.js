@@ -133,6 +133,22 @@ const data = {
       description: 'Convert special characters to HTML entities'
     },
     {
+      name: 'trim()',
+      description: 'Strip whitespace (or other characters) from the beginning and end of a string'
+    },
+    {
+      name: 'stripslashes()',
+      description: 'Un-quotes a quoted string'
+    },
+    {
+      name: 'strtolower()',
+      description: 'Make a string lowercase'
+    },
+    {
+      name: 'strtoupper()',
+      description: 'Make a string uppercase'
+    },
+    {
       name: 'strlen()',
       description: "Get string length"
     },

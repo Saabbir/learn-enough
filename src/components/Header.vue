@@ -40,14 +40,14 @@ export default {
     /**
      * Mobile Menu Functionality
      */
-    (function(){
+    !function(){
       const menuToggleBtn = document.querySelector('.toggle-mobile-nav')
       const menu = document.querySelector('.menu')
       menuToggleBtn.addEventListener('click', function() {
         menu.classList.toggle('show')
         this.classList.toggle('active')
       })
-    })()
+    }()
   }
 }
 </script>

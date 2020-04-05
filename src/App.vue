@@ -16,6 +16,9 @@ export default {
     'app-header': Header,
   },
   mounted() {
+    /**
+     * Back to top functionality
+     */
     !function () {
       const viewportHeight = window.innerHeight
       const backToTopEl    = document.querySelector('#back-to-top')

@@ -37,41 +37,45 @@
               </p>
 
               <p>
-                In PHP, variable declaration starts with <code class="inline">$</code> sign.
+                In PHP, variable declaration starts with <code>$</code> sign.
               </p>
 
               <p>In PHP, we use snake case for identifier.</p>
 
-              <p>In PHP, we create arrays using <code class="inline">arrays()</code> function.</p>
+              <p>In PHP, we create arrays using <code>array()</code> function.</p>
 
               <p>
-                String using double quotes allow interpolation.
+                String using double quotes allow interpolation. We can also wrap expression in curly braces for interpolation when we access array value.
               </p>
 
               <p>
-                In PHP, semicolon is a must for many cases.
+                In PHP, semicolon is mandatory.
               </p>
 
               <p>
-                In PHP, we use <code class="inline">.</code> sign for concatenation.
+                In PHP, we use <code>.</code> sign for concatenation.
               </p>
 
               <p>
-                In PHP, we use <code class="inline">-></code> sign to access an object property value. It's equivalent of JavaScript's <code class="inline">.</code> notation.
+                In PHP, we use <code>-></code> sign to access an object property value. It's equivalent of JavaScript's <code>.</code> notation.
               </p>
 
               <p>
-                PHP is not case sensitive. However PHP variables are case sensitive.
+                PHP is not case sensitive. However PHP variables are case sensitive. <code>null</code> and <code>NULL</code> is same where variable <code>$a</code> and <code>$A</code> is not the same.
               </p>
 
               <p>PHP whitespace independent.</p>
 
               <p>
-                In PHP, we can use <code class="inline">$array[]</code> this syntax to push an item to the the array.
+                In PHP, we can use <code>$array[]</code> syntax to push an item to the array.
               </p>
 
               <p>
-                In PHP, we use <code class="inline">=></code> fat arrow syntax to associate key with value inside associative array. It's equivalent of JavaScript's <code class="inline">:</code> colon syntax inside object literal. Associative arrays in PHP are equivalent of JavaScript's object literal.
+                In PHP, we use <code>=></code> fat arrow syntax to associate key with value inside associative array. It's equivalent of JavaScript's <code>:</code> colon syntax inside object literal. Associative arrays in PHP are equivalent of JavaScript's object literal.
+              </p>
+
+              <p>
+                In PHP, we use <code>(bool)</code> to convert a value into it's boolean counterpart. Like <code>(bool) array()</code> will return false because empty array() is considered falsy value in PHP. <a href="https://www.php.net/manual/en/language.types.boolean.php" target="_blank">Read more about converting to Boolean in PHP</a>. Also <a href="https://www.php.net/manual/en/language.types.type-juggling.php" target="_blank">Read about type casting in PHP</a>.
               </p>
 
             </section>
@@ -90,7 +94,7 @@
                 </thead>
                 <tbody>
                   <tr v-for="(construct, index) in data.builtInConstructs" :key="index">
-                    <td><code class="inline">{{ construct.name }}</code></td>
+                    <td><code>{{ construct.name }}</code></td>
                     <td>{{ construct.description }}</td>
                   </tr>
                 </tbody>
@@ -111,7 +115,7 @@
                 </thead>
                 <tbody>
                   <tr v-for="(func, index) in data.variableHandlingFunctions" :key="index">
-                    <td><code class="inline">{{ func.name }}</code></td>
+                    <td><code>{{ func.name }}</code></td>
                     <td>{{ func.description }}</td>
                   </tr>
                 </tbody>
@@ -132,7 +136,7 @@
                 </thead>
                 <tbody>
                   <tr v-for="(func, index) in data.stringFunctions" :key="index">
-                    <td><code class="inline">{{ func.name }}</code></td>
+                    <td><code>{{ func.name }}</code></td>
                     <td>{{ func.description }}</td>
                   </tr>
                 </tbody>
@@ -153,7 +157,7 @@
                 </thead>
                 <tbody>
                   <tr v-for="(func, index) in data.arrayFunctions" :key="index">
-                    <td><code class="inline">{{ func.name }}</code></td>
+                    <td><code>{{ func.name }}</code></td>
                     <td>{{ func.description }}</td>
                   </tr>
                 </tbody>
@@ -174,7 +178,7 @@
                 </thead>
                 <tbody>
                   <tr v-for="(func, index) in data.miscFunctions" :key="index">
-                    <td><code class="inline">{{ func.name }}</code></td>
+                    <td><code>{{ func.name }}</code></td>
                     <td>{{ func.description }}</td>
                   </tr>
                 </tbody>
@@ -195,27 +199,27 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><code class="inline">$_SERVER</code></td>
+                    <td><code>$_SERVER</code></td>
                     <td>Server and execution environment information</td>
                   </tr>
                   <tr>
-                    <td><code class="inline">$_GET</code></td>
+                    <td><code>$_GET</code></td>
                     <td>HTTP GET variables</td>
                   </tr>
                   <tr>
-                    <td><code class="inline">$_POST</code></td>
+                    <td><code>$_POST</code></td>
                     <td>HTTP POST variables</td>
                   </tr>
                   <tr>
-                    <td><code class="inline">$_SESSION</code></td>
+                    <td><code>$_SESSION</code></td>
                     <td>Session variables</td>
                   </tr>
                   <tr>
-                    <td><code class="inline">$_COOKIE</code></td>
+                    <td><code>$_COOKIE</code></td>
                     <td>HTTP Cookies</td>
                   </tr>
                   <tr>
-                    <td><code class="inline">$_REQUEST</code></td>
+                    <td><code>$_REQUEST</code></td>
                     <td>HTTP Request variables</td>
                   </tr>
                 </tbody>
@@ -226,6 +230,25 @@
                     </td>
                   </tr>
                 </tfoot>
+              </table>
+            </div><!-- /.c-table-responsive -->
+
+            <!-- MySQLi Related Functions -->
+            <div class="c-table-responsive u-middle-el">
+              <table class="c-table">
+                <caption>MySQLi Related Functions</caption>
+                <thead>
+                  <tr>
+                    <th>Function Name</th>
+                    <th>Short Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="(func, index) in data.mysqliFunctions" :key="index">
+                    <td><code>{{ func.name }}</code></td>
+                    <td>{{ func.description }}</td>
+                  </tr>
+                </tbody>
               </table>
             </div><!-- /.c-table-responsive -->
 

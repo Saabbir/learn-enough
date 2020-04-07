@@ -141,6 +141,10 @@ const data = {
       description: 'Un-quotes a quoted string'
     },
     {
+      name: 'strip_tags()',
+      description: 'Strip HTML and PHP tags from a string'
+    },
+    {
       name: 'strtolower()',
       description: 'Make a string lowercase'
     },
@@ -259,12 +263,58 @@ const data = {
       description: 'Start new or resume existing session'
     },
     {
+      name: 'session_name()',
+      description: 'Get and/or set the current session name'
+    },
+    {
+      name: 'session_unset()',
+      description: 'Free all session variables'
+    },
+    {
       name: 'session_destroy()',
       description: 'Destroys all data registered to a session'
     },
     {
       name: 'setcookie()',
       description: 'Send a cookie'
+    },
+    {
+      name: 'password_hash()',
+      description: 'Creates a password hash'
+    },
+    {
+      name: 'password_verify()',
+      description: 'Verifies that a password matches a hash'
+    },
+  ],
+  mysqliFunctions: [
+    {
+      name: 'mysqli_connect()',
+      description: 'Open a new connection to the MySQL server'
+    },
+    {
+      name: 'mysqli_connect_error()',
+      description: 'Returns a string description of the last connect error'
+    },
+    {
+      name: 'mysqli_query()',
+      description: 'Performs a query on the database'
+    },
+    {
+      name: 'mysqli_num_rows()',
+      description: 'Gets the number of rows in a result'
+    },
+    {
+      name: 'mysqli_fetch_assoc()',
+      description: 'Fetch a result row as an associative array'
+    },
+    {
+      name: 'mysqli_error()',
+      description: 'Returns a string description of the last error'
+    },
+    {
+      name: 'mysqli_close()',
+      description: 'Closes a previously opened database connection'
     },
   ]
 }

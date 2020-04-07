@@ -29,6 +29,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "git" */ '../views/Git.vue')
   },
   {
+    path: '/css',
+    name: 'Css',
+    component: () => import(/* webpackChunkName: "css" */ '../views/css/Css.vue')
+  },
+  {
     path: '/javascript',
     name: 'JavaScript',
     component: () => import(/* webpackChunkName: "javascript" */ '../views/javascript/JavaScript.vue')

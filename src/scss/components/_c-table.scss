@@ -32,12 +32,12 @@
   }
 
   thead,
-  tbody tr.info {
+  tr.info {
     background-color: #f0f8ff;
   }
 
   tbody {
-    tr:nth-of-type(odd) {
+    tr:not(.info):nth-of-type(odd) {
       background-color: #f9f9f9;
     }
 

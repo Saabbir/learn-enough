@@ -44,6 +44,12 @@ const subjects = [
     link: {name: 'Git'},
   },
   {
+    title: 'Learn enough CSS',
+    description: 'Learn enough CSS to create amazing layouts, animations and designs of your site.',
+    icon: 'fab fa-css3-alt',
+    link: {name: 'Css'},
+  },
+  {
     title: 'Learn enough JavaScript',
     description: 'Learn enough JavaScript to know how to solve problems using documentation. Understand the fundamental concepts.',
     icon: 'fab fa-js-square',

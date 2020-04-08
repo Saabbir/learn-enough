@@ -9,50 +9,12 @@
         <table class="c-table">
           <caption>Learn Enough CSS Grid</caption>
           <thead>
-            <tr>
+            <tr class="thead-tr">
               <th>Property</th>
               <th>Description</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="info">
-              <td colspan="2">Terminology</td>
-            </tr>
-            <tr>
-              <td><strong>Grid container</strong></td>
-              <td>The container that holds the entire CSS grid.</td>
-            </tr>
-            <tr>
-              <td><strong>Grid item</strong></td>
-              <td>Any element that is a direct child of a grid container.</td>
-            </tr>
-            <tr>
-              <td><strong>Grid lines</strong></td>
-              <td>The vertical and horizontal lines that divide the grid and separate the columns and rows.</td>
-            </tr>
-            <tr>
-              <td><strong>Grid cell</strong></td>
-              <td>A single unit of a CSS grid.</td>
-            </tr>
-            <tr>
-              <td><strong>Grid track</strong></td>
-              <td>The space between two grid lines. This space can be horizontal or vertical.</td>
-            </tr>
-            <tr>
-              <td><strong>Gutter</strong></td>
-              <td>The space between rows and columns in a grid.</td>
-            </tr>
-            <tr class="info">
-              <td colspan="2">Grid functions</td>
-            </tr>
-            <tr>
-              <td><strong>repeat()</strong></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><strong>minmax()</strong></td>
-              <td></td>
-            </tr>
             <tr class="info">
               <td colspan="2">Grid container properties</td>
             </tr>
@@ -123,6 +85,62 @@
               <td><code>grid-area</code></td>
               <td>Define a name for grid item.</td>
             </tr>
+            <tr class="info">
+              <td colspan="2">Grid Terminology</td>
+            </tr>
+            <tr>
+              <td><strong>Grid container</strong></td>
+              <td>The container that holds the entire CSS grid.</td>
+            </tr>
+            <tr>
+              <td><strong>Grid item</strong></td>
+              <td>Any element that is a direct child of a grid container.</td>
+            </tr>
+            <tr>
+              <td><strong>Grid lines</strong></td>
+              <td>The vertical and horizontal lines that divide the grid and separate the columns and rows.</td>
+            </tr>
+            <tr>
+              <td><strong>Grid cell</strong></td>
+              <td>A single unit of a CSS grid.</td>
+            </tr>
+            <tr>
+              <td><strong>Grid track</strong></td>
+              <td>The space between two grid lines. This space can be horizontal or vertical.</td>
+            </tr>
+            <tr>
+              <td><strong>Gutter</strong></td>
+              <td>The space between rows and columns in a grid.</td>
+            </tr>
+            <tr class="info">
+              <td colspan="2">Grid Functions</td>
+            </tr>
+            <tr>
+              <td><strong>repeat()</strong></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>minmax()</strong></td>
+              <td></td>
+            </tr>
+            <tr class="info">
+              <td colspan="2">Grid Keywords</td>
+            </tr>
+            <tr>
+              <td><strong>auto-fill</strong></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>auto-fit</strong></td>
+              <td></td>
+            </tr>
+            <tr class="info">
+              <td colspan="2">Grid Units</td>
+            </tr>
+            <tr>
+              <td><strong>fr</strong></td>
+              <td></td>
+            </tr>
           </tbody>
           <tfoot>
             <tr class="info">
@@ -135,12 +153,12 @@
             </tr>
             <tr>
               <td colspan="2">
-                <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">A Complete Guide to Grid</a>
+                <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">A Complete Guide to CSS Grid by <strong>CSS Tricks</strong></a>
               </td>
             </tr>
             <tr>
               <td colspan="2">
-                <a href="https://mozilladevelopers.github.io/playground/css-grid" target="_blank">Introduction to css grid layout</a>
+                <a href="https://mozilladevelopers.github.io/playground/css-grid" target="_blank">Introduction to css grid layout on <strong>Mozilla Playground</strong></a>
               </td>
             </tr>
             <tr>
@@ -150,27 +168,27 @@
             </tr>
             <tr>
               <td colspan="2">
-                <a href="https://alistapart.com/article/the-story-of-css-grid-from-its-creators/" target="_blank">The Story of CSS Grid, from Its Creators</a>
+                <a href="https://alistapart.com/article/the-story-of-css-grid-from-its-creators/" target="_blank">The Story of CSS Grid, <strong>from Its Creators</strong></a>
               </td>
             </tr>
             <tr>
               <td colspan="2">
-                <a href="https://www.smashingmagazine.com/2018/05/guide-css-layout/" target="_blank">Getting Started With CSS Layout</a>
+                <a href="https://www.smashingmagazine.com/2018/05/guide-css-layout/" target="_blank">Getting Started With CSS Layout on <strong>Smashing Magazine</strong></a>
               </td>
             </tr>
             <tr>
               <td colspan="2">
-                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank">CSS Grid Layout on MDN</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank">CSS Grid Layout on <strong>MDN</strong></a>
               </td>
             </tr>
             <tr>
               <td colspan="2">
-                <a href="https://cssgrid.io/" target="_blank">CSS Grid Free course by Wes Bos</a>
+                <a href="https://cssgrid.io/" target="_blank">CSS Grid Free course by <strong>Wes Bos</strong></a>
               </td>
             </tr>
             <tr>
               <td colspan="2">
-                <a href="https://tympanus.net/codrops/css_reference/grid/" target="_blank">CSS Grid Reference on Coderops</a>
+                <a href="https://tympanus.net/codrops/css_reference/grid/" target="_blank">CSS Grid Reference on <strong>Codrops</strong></a>
               </td>
             </tr>
             <tr>
@@ -180,7 +198,7 @@
             </tr>
             <tr>
               <td colspan="2">
-                <a href="https://laracasts.com/series/css-grids-for-everyone" target="_blank">CSS Grids for Everyone</a>
+                <a href="https://laracasts.com/series/css-grids-for-everyone" target="_blank">CSS Grids for Everyone on <strong>laracasts</strong></a>
               </td>
             </tr>
           </tfoot>

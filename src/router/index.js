@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../modules/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -8,7 +7,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: () => import(/* webpackChunkName: "home" */ '../modules/home/views/Home.vue')
   },
   {
     path: '/command-line',
@@ -16,22 +15,22 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "command-line" */ '../modules/command-line/CommandLine.vue')
+    component: () => import(/* webpackChunkName: "command-line" */ '../modules/command-line/views/CommandLine.vue')
   },
   {
     path: '/text-editor',
     name: 'TextEditor',
-    component: () => import(/* webpackChunkName: "text-editor" */ '../modules/TextEditor.vue')
+    component: () => import(/* webpackChunkName: "text-editor" */ '../modules/text-editor/views/TextEditor.vue')
   },
   {
     path: '/git',
     name: 'Git',
-    component: () => import(/* webpackChunkName: "git" */ '../modules/Git.vue')
+    component: () => import(/* webpackChunkName: "git" */ '../modules/git/views/Git.vue')
   },
   {
     path: '/css',
     name: 'Css',
-    component: () => import(/* webpackChunkName: "css" */ '../modules/css/Css.vue')
+    component: () => import(/* webpackChunkName: "css" */ '../modules/css/views/Css.vue')
   },
   {
     path: '/javascript',
@@ -41,12 +40,12 @@ const routes = [
   {
     path: '/php',
     name: 'Php',
-    component: () => import(/* webpackChunkName: "php" */ '../modules/php/Php.vue')
+    component: () => import(/* webpackChunkName: "php" */ '../modules/php/views/Php.vue')
   },
   {
     path: '/wordpress',
     name: 'WordPress',
-    component: () => import(/* webpackChunkName: "wordpress" */ '../modules/WordPress.vue')
+    component: () => import(/* webpackChunkName: "wordpress" */ '../modules/wordpress/views/WordPress.vue')
   },
 ]
 

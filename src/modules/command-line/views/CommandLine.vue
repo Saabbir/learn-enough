@@ -641,7 +641,7 @@
 </template>
 
 <script>
-  import data from './data'
+  import data from '../data/data.js'
 
   export default {
     name: 'CommandLine',

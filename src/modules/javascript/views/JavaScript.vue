@@ -43,10 +43,10 @@
       <div class="l-wrap l-wrap--narrow l-wrap--no-padding">
 
         <!-- Back Home -->
-        <router-link :to="{ name: 'Home' }">Back home</router-link>
+        <router-link :to="{ name: 'Home' }" class="u-mb-10">Back home</router-link>
 
         <!-- Open Sidenav -->
-        <div class="o-toggle-sidenav u-mt-5 u-mb-20">
+        <div class="o-toggle-sidenav u-mb-20">
           <a @click.prevent="toggleSidenav" href="#">View table of contents</a>
         </div>
 

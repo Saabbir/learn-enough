@@ -1,6 +1,6 @@
 <template>
-  <div class="u-section-padding u-bg-gray u-fill-viewport-gap">
-    <div class="c-sidenav">
+  <div class="view-javascript u-bg-grey">
+    <aside class="c-sidenav">
       <ul>
         <li 
           @click="selectedComponent = 'Introduction'"
@@ -37,20 +37,16 @@
           @click="selectedComponent = 'Resources'"
           :class="{active: selectedComponent === 'Resources'}">Resources</li>
       </ul>
-    </div>
-    <div class="l-wrap">
-      <div class="l-row">
-        <div class="l-col l-col--md-10 l-col--offset-md-1">
+    </aside>
+    <main>
+      <div class="l-wrap l-wrap--narrow l-wrap--no-padding">
+        <!-- Back Home -->
+        <router-link :to="{ name: 'Home' }" class="u-top-el">Back home</router-link>
 
-          <!-- Back Home -->
-          <router-link :to="{ name: 'Home' }" class="u-top-el">Back home</router-link>
-
-          <!-- Render different component dynamically -->
-          <component :is="selectedComponent"></component>
-
-        </div><!-- /.l-col -->
-      </div><!-- /.l-row -->
-    </div><!-- /.l-wrap -->
+        <!-- Render different component dynamically -->
+        <component :is="selectedComponent"></component>
+      </div>
+    </main>
   </div>
 </template>
 
@@ -92,3 +88,21 @@
     }
   }
 </script>
+
+<style lang="scss">
+  .view-javascript {
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      min-height: calc(100vh - 70px);      
+    }
+
+    main {
+      padding: 3rem 1.5rem;
+
+      @media (min-width: 415px) {
+        padding: 3rem;
+      }
+    }
+  }
+</style>

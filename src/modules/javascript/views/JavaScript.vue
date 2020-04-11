@@ -1,7 +1,8 @@
 <template>
   <div class="view-javascript u-bg-grey">
-    <aside class="c-sidenav">
+    <aside class="c-sidenav" ref="sidenav">
       <ul>
+        <li @click="toggleSidenav" class="o-close-sidenav">Close Sidenav <i class="fas fa-times"></i></li>
         <li 
           @click="selectedComponent = 'Introduction'"
           :class="{active: selectedComponent === 'Introduction'}"
@@ -40,8 +41,14 @@
     </aside>
     <main>
       <div class="l-wrap l-wrap--narrow l-wrap--no-padding">
+
         <!-- Back Home -->
-        <router-link :to="{ name: 'Home' }" class="u-top-el">Back home</router-link>
+        <router-link :to="{ name: 'Home' }">Back home</router-link>
+
+        <!-- Open Sidenav -->
+        <div class="o-toggle-sidenav u-mt-5 u-mb-20">
+          <a @click.prevent="toggleSidenav" href="#">View table of contents</a>
+        </div>
 
         <!-- Render different component dynamically -->
         <component :is="selectedComponent"></component>
@@ -82,6 +89,11 @@
       Resources,
       Strings,
       UnderTheHood
+    },
+    methods: {
+      toggleSidenav() {
+        this.$refs.sidenav.classList.toggle('c-sidenav--is-open')
+      }
     },
     mounted() {
       window.Prism.highlightAll()

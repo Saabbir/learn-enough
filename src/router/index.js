@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Home from '../modules/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -16,37 +16,37 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "command-line" */ '../views/command-line/CommandLine.vue')
+    component: () => import(/* webpackChunkName: "command-line" */ '../modules/command-line/CommandLine.vue')
   },
   {
     path: '/text-editor',
     name: 'TextEditor',
-    component: () => import(/* webpackChunkName: "text-editor" */ '../views/TextEditor.vue')
+    component: () => import(/* webpackChunkName: "text-editor" */ '../modules/TextEditor.vue')
   },
   {
     path: '/git',
     name: 'Git',
-    component: () => import(/* webpackChunkName: "git" */ '../views/Git.vue')
+    component: () => import(/* webpackChunkName: "git" */ '../modules/Git.vue')
   },
   {
     path: '/css',
     name: 'Css',
-    component: () => import(/* webpackChunkName: "css" */ '../views/css/Css.vue')
+    component: () => import(/* webpackChunkName: "css" */ '../modules/css/Css.vue')
   },
   {
     path: '/javascript',
     name: 'JavaScript',
-    component: () => import(/* webpackChunkName: "javascript" */ '../views/javascript/JavaScript.vue')
+    component: () => import(/* webpackChunkName: "javascript" */ '../modules/javascript/views/JavaScript.vue')
   },
   {
     path: '/php',
     name: 'Php',
-    component: () => import(/* webpackChunkName: "php" */ '../views/php/Php.vue')
+    component: () => import(/* webpackChunkName: "php" */ '../modules/php/Php.vue')
   },
   {
     path: '/wordpress',
     name: 'WordPress',
-    component: () => import(/* webpackChunkName: "wordpress" */ '../views/WordPress.vue')
+    component: () => import(/* webpackChunkName: "wordpress" */ '../modules/WordPress.vue')
   },
 ]
 

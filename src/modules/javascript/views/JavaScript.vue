@@ -55,17 +55,17 @@
 </template>
 
 <script>
-  import Arrays         from './components/Arrays'
-  import AsyncJS        from './components/AsyncJS'
-  import ClientSideJS   from './components/ClientSideJS'
-  import DataTypes      from './components/DataTypes'
-  import Functions      from './components/Functions'
-  import Introduction   from './components/Introduction'
-  import JSON           from './components/JSON'
-  import Objects        from './components/Objects'
-  import Resources      from './components/Resources'
-  import Strings        from './components/Strings'
-  import UnderTheHood   from './components/UnderTheHood'
+  import Arrays         from '../components/Arrays'
+  import AsyncJS        from '../components/AsyncJS'
+  import ClientSideJS   from '../components/ClientSideJS'
+  import DataTypes      from '../components/DataTypes'
+  import Functions      from '../components/Functions'
+  import Introduction   from '../components/Introduction'
+  import JSON           from '../components/JSON'
+  import Objects        from '../components/Objects'
+  import Resources      from '../components/Resources'
+  import Strings        from '../components/Strings'
+  import UnderTheHood   from '../components/UnderTheHood'
 
   export default {
     name: 'JavaScript',

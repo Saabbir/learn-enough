@@ -11,7 +11,7 @@
               <div class="c-card__icon">
                 <i :class="subject.icon"></i>
               </div>
-              <h4 class="c-card__title">{{ subject.title }}</h4>
+              <h6 class="c-card__title">{{ subject.title }}</h6>
               <p class="c-card__text">{{ subject.description }}</p>
             </div><!-- /.c-card -->
           </div><!-- /.l-col -->
@@ -68,10 +68,16 @@ const subjects = [
     link: {name: 'WordPress'},
   },
   {
-    title: 'Learn enough Vue',
+    title: 'Learn enough Vue JS',
     description: 'Learn enough Vue to create single page applications as well as multi-page application.',
-    icon: 'fab fa-vue',
+    icon: 'fab fa-vuejs',
     link: {name: 'Vue'},
+  },
+  {
+    title: 'Learn enough HTML Email',
+    description: 'Learn enough HTML email to build amazing custom HTML email templates which display properly across various email clients.',
+    icon: 'fas fa-envelope-open-text',
+    link: {name: 'HtmlEmail'},
   },
 ]
 

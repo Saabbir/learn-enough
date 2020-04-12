@@ -5,17 +5,25 @@ body {
 }
 
 h1 {
-  font: 700 42px/48px $nunito;
+  font: 700 4.2rem/1.2 $nunito;
 }
 
 h2 {
-  font: 700 30px/36px $nunito;
+  font: 700 3rem/1.2 $nunito;
 }
 
 h3 {
-  font: 700 24px/30px $nunito;
+  font: 700 2.4rem/1.3 $nunito;
 }
 
 h4 {
-  font: 700 20px/26px $nunito;
+  font: 700 2.2rem/1.3 $nunito;
+}
+
+h5 {
+  font: 700 2rem/1.3 $nunito;
+}
+
+h6 {
+  font: 700 1.8rem/1.4 $nunito;
 }

@@ -47,6 +47,11 @@ const routes = [
     name: 'WordPress',
     component: () => import(/* webpackChunkName: "wordpress" */ '../modules/wordpress/views/WordPress.vue')
   },
+  {
+    path: '/vue',
+    name: 'Vue',
+    component: () => import(/* webpackChunkName: "wordpress" */ '../modules/vue/views/Vue.vue')
+  },
 ]
 
 const router = new VueRouter({

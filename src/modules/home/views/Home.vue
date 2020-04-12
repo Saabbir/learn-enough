@@ -67,6 +67,12 @@ const subjects = [
     icon: 'fab fa-wordpress',
     link: {name: 'WordPress'},
   },
+  {
+    title: 'Learn enough Vue',
+    description: 'Learn enough Vue to create single page applications as well as multi-page application.',
+    icon: 'fab fa-vue',
+    link: {name: 'Vue'},
+  },
 ]
 
 import Footer from '@/components/Footer'

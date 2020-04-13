@@ -264,6 +264,24 @@
             <tr>
               <td>Avoid shorthand property values and use longhand version of each property. <strong>Be explicit.</strong></td>
             </tr>
+            <tr>
+              <td>Don not use unit less line height. Use <strong>px</strong> unit explicitly for all values including line heights.</td>
+            </tr>
+            <tr>
+              <td>Use @media rule to import google font.</td>
+            </tr>
+            <tr>
+              <td>Conditionally apply markup for outlook.</td>
+            </tr>
+            <tr>
+              <td>Use absolute path for image source.</td>
+            </tr>
+            <tr>
+              <td>Use <strong>width</strong> and <strong>height</strong> attribute explicitly on img element.</td>
+            </tr>
+            <tr>
+              <td>Style <strong>alt</strong> tag by specifying background color and using font properties to the img element's inline style which will only appear when image is disabled on the email client.</td>
+            </tr>
           </tbody>
         </table>
       </div><!-- /.c-table-responsive -->
@@ -305,6 +323,45 @@
             <tr>
               <td>
                 <a href="http://labs.actionrocket.co/td-or-not-to-td-that-is-now-a-question" target="_blank">td or not td? That is now a question.</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://ia.net/topics/the-web-is-all-about-typography-period" target="_blank">Web Design is 95% Typography</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://julie.io/learn-email-html/issues/4-images-back-to-basics/" target="_blank">Issue #4 - Back to Basics: Images</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.freecodecamp.org/news/the-fab-four-technique-to-create-responsive-emails-without-media-queries-baf11fdfa848/" target="_blank">The Fab Four technique to create Responsive Emails without Media Queries</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://cm.engineering/coding-mobile-first-emails-1513ac4673e" target="_blank">Coding mobile-first emails</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- /.c-table-responsive -->
+
+      <!-- Email design and development tools -->
+      <div class="c-table-responsive">
+        <table class="c-table">
+          <caption>Email design and development tools</caption>
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://buttons.cm/" target="_blank">Bulletproof email buttons</a> by <strong>Campaign Monitor</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://backgrounds.cm/" target="_blank">Bulletproof background images</a> by <strong>Campaign Monitor</strong>
               </td>
             </tr>
           </tbody>

@@ -52,6 +52,7 @@
 
         <!-- Render different component dynamically -->
         <component :is="selectedComponent"></component>
+
       </div>
     </main>
   </div>

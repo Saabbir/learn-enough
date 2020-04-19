@@ -1,9 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+import JavaScriptRoutes from '@/modules/javascript/routes';
+
 Vue.use(VueRouter)
 
 const routes = [
+  ...JavaScriptRoutes,
   {
     path: '/',
     name: 'Home',
@@ -56,6 +59,16 @@ const routes = [
     path: '/html-email',
     name: 'HtmlEmail',
     component: () => import(/* webpackChunkName: "html-email" */ '../modules/html-email/views/HtmlEmail.vue')
+  },
+  {
+    path: '/regex',
+    name: 'Regex',
+    component: () => import(/* webpackChunkName: "regex" */ '../modules/regex/views/Regex.vue')
+  },
+  {
+    path: '/web-development',
+    name: 'WebDevelopment',
+    component: () => import(/* webpackChunkName: "web-development" */ '../modules/web-development/views/WebDevelopment.vue')
   },
 ]
 

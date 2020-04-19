@@ -79,6 +79,18 @@ const subjects = [
     icon: 'fas fa-envelope-open-text',
     link: {name: 'HtmlEmail'},
   },
+  {
+    title: 'Learn enough Regular Expressions',
+    description: 'Learn enough Regular Expressions to match any patterns in a large block of text string.',
+    icon: 'fas fa-search',
+    link: {name: 'Regex'},
+  },
+  {
+    title: 'More on Web Development',
+    description: 'Learn more about web development.',
+    icon: 'fas fa-code',
+    link: {name: 'WebDevelopment'},
+  },
 ]
 
 import Footer from '@/components/Footer'

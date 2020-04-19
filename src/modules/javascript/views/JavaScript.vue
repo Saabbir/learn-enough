@@ -23,6 +23,9 @@
           @click="selectedComponent = 'Objects'"
           :class="{active: selectedComponent === 'Objects'}">Objects</li>
         <li 
+          @click="selectedComponent = 'DOM'"
+          :class="{active: selectedComponent === 'DOM'}">DOM</li>
+        <li 
           @click="selectedComponent = 'JSON'"
           :class="{active: selectedComponent === 'JSON'}">JSON</li>
         <li 
@@ -70,6 +73,7 @@
   import Resources      from '../components/Resources'
   import Strings        from '../components/Strings'
   import UnderTheHood   from '../components/UnderTheHood'
+  import DOM            from '../components/DOM'
 
   export default {
     name: 'JavaScript',
@@ -89,7 +93,8 @@
       Objects,
       Resources,
       Strings,
-      UnderTheHood
+      UnderTheHood,
+      DOM
     },
     methods: {
       toggleSidenav() {

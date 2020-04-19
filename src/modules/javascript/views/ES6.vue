@@ -70,6 +70,25 @@
           </section>
         </div><!-- /.l-col -->
       </div><!-- /.l-row -->
+
+      <!-- Further reading -->
+      <div class="c-table-responsive">
+        <table class="c-table">
+          <caption>Further reading</caption>
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://www.telerik.com/blogs/es6-syntax-features-and-additions" target="_blank">ES6 Syntax, Features and Additions: A Reference Guide</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://bytearcher.com/articles/roadmap-for-learning-javascript-language/" target="_blank">Roadmap for learning the JavaScript language</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- /.c-table-responsive -->
     </div><!-- /.l-wrap -->
   </main>
 </template>

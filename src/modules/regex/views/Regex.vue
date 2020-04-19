@@ -53,6 +53,16 @@
                 <a href="https://regexone.com/" target="_blank">regexone</a>
               </td>
             </tr>
+            <tr>
+              <td>
+                <a href="https://www.regexpal.com/" target="_blank">regexpal</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://regexr.com/" target="_blank">regexr</a>
+              </td>
+            </tr>
           </tbody>
         </table>
       </div><!-- /.c-table-responsive -->      

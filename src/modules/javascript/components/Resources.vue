@@ -25,10 +25,27 @@
           <li><a href="https://html5test.com/">HTML5Test</a></li>
         </ul>
       </div>
-      <div>
+      <div class="u-middle-el">
         <h3 class="u-top-el">Series</h3>
         <ul>
           <li><a href="https://atom-morgan.github.io/javascript/">Code Companion series by Adam Morgan</a></li>
+          <li><a href="https://javascript.christmas/">Javascript Christmas</a></li>
+        </ul>
+      </div>
+      <div class="u-middle-el">
+        <h3 class="u-top-el">Articles</h3>
+        <ul>
+          <li>
+            <a href="https://dmitripavlutin.com/javascript-classes-complete-guide/" target="_blank">The Complete Guide to JavaScript Classes</a>
+          </li>
+        </ul>
+      </div>
+      <div class="u-middle-el">
+        <h3 class="u-top-el">Courses</h3>
+        <ul>
+          <li>
+            <a href="http://learnwith.hasinhayder.com/js/" target="_blank">Begining JavaScript</a>
+          </li>
         </ul>
       </div>
     </section>

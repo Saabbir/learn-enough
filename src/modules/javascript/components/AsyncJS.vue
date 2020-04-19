@@ -1,5 +1,5 @@
 <template>
-  <div class="c-copy">
+  <div class="l-wrap c-copy">
 
     <h1 class="u-mb-20">Asynchronous JavaScript</h1>
     
@@ -41,7 +41,21 @@
         </p>
       </div><!-- /.c-box -->
     </section>
-    
+
+    <!-- Further reading -->
+    <div class="c-table-responsive">
+      <table class="c-table">
+        <caption>Further reading</caption>
+        <tbody>
+          <tr>
+            <td>
+              <a href="https://www.hongkiat.com/blog/synchronous-asynchronous-javascript/" target="_blank">Understanding Synchronous and Asynchronous JavaScript – Part 1</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div><!-- /.c-table-responsive -->
+
   </div>
 </template>
 

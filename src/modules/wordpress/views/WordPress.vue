@@ -345,13 +345,13 @@
           <li>How to get desired posts by using filters in custom query</li>
           <li>Knowing different hooks</li>
         </ol>
-        <div class="u-mt-20">
+        <div class="u-mt-40">
           <h3 class="u-mb-20">Notes</h3>
           <ul>
             <li>WordPress Default Pagination Works for only Default URL based Queries.</li>
           </ul>
         </div>
-        <div class="u-mt-20">
+        <div class="u-mt-40">
           <h3 class="u-mb-20">Most used and handy WordPress plugins list</h3>
           <ul>
             <li>Advanced Custom Field</li>
@@ -361,7 +361,7 @@
             <li>All-in-One WP Migration by ServMask</li>
           </ul>
         </div>
-        <div>
+        <div class="u-mt-40">
           <h3 class="u-mb-20">WordPress Learning Resources</h3>
           <ul>
             <li><a href="https://developer.wordpress.org/reference/">WordPress Reference</a></li>

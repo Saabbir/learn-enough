@@ -70,7 +70,7 @@
               <td>Render the element and component once only.</td>
             </tr>
             <tr>
-              <td>
+              <td colspan="2">
                 <a href="https://vuejs.org/v2/api/#Directives" target="_blank">More on Vue official api documentation.</a>
               </td>
             </tr>

@@ -81,7 +81,7 @@
             </section>
 
             <!-- Built-in PHP Constructs -->
-            <div class="c-table-responsive u-middle-el">
+            <div class="c-table-responsive u-mt-40">
               <table class="c-table">
                 <caption>
                   <a href="https://www.php.net/manual/en/language.control-structures.php" target="_blank">Built-in PHP Constructs (control structures)</a>
@@ -102,7 +102,7 @@
             </div><!-- /.c-table-responsive -->
 
             <!-- Built-in PHP Variable Handling Functions -->
-            <div class="c-table-responsive u-middle-el">
+            <div class="c-table-responsive u-mt-20">
               <table class="c-table">
                 <caption>
                   <a href="https://www.php.net/manual/en/ref.var.php" target="_blank">Built-in PHP Variable Handling Functions</a>
@@ -123,7 +123,7 @@
             </div><!-- /.c-table-responsive -->
 
             <!-- Built-in PHP String Functions -->
-            <div class="c-table-responsive u-middle-el">
+            <div class="c-table-responsive u-mt-20">
               <table class="c-table">
                 <caption>
                   <a href="https://www.php.net/manual/en/ref.strings.php" target="_blank">Built-in PHP String Functions</a>
@@ -144,7 +144,7 @@
             </div><!-- /.c-table-responsive -->
 
             <!-- Built-in PHP Array Functions -->
-            <div class="c-table-responsive u-middle-el">
+            <div class="c-table-responsive u-mt-20">
               <table class="c-table">
                 <caption>
                   <a href="https://www.php.net/manual/en/ref.array.php" target="_blank">Built-in PHP Array Functions</a>
@@ -165,7 +165,7 @@
             </div><!-- /.c-table-responsive -->
 
             <!-- Built-in PHP Miscellaneous Functions -->
-            <div class="c-table-responsive u-middle-el">
+            <div class="c-table-responsive u-mt-20">
               <table class="c-table">
                 <caption>
                   <a href="https://www.php.net/manual/en/ref.misc.php" target="_blank">Built-in PHP Miscellaneous Functions</a>
@@ -186,7 +186,7 @@
             </div><!-- /.c-table-responsive -->
 
             <!-- PHP Superglobals -->
-            <div class="c-table-responsive u-middle-el">
+            <div class="c-table-responsive u-mt-20">
               <table class="c-table">
                 <caption>
                   <a href="https://www.php.net/manual/en/language.variables.superglobals.php" target="_blank">PHP Superglobal Variables</a>
@@ -234,7 +234,7 @@
             </div><!-- /.c-table-responsive -->
 
             <!-- MySQLi Related Functions -->
-            <div class="c-table-responsive u-middle-el">
+            <div class="c-table-responsive u-mt-20">
               <table class="c-table">
                 <caption>MySQLi Related Functions</caption>
                 <thead>

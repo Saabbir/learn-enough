@@ -37,6 +37,16 @@
     color: #000;
     background-color: #e0e0e0;
   }
+
+  li a {
+    display: block;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
 }
 
 .o-toggle-sidenav {

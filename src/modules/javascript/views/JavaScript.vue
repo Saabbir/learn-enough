@@ -40,6 +40,12 @@
         <li 
           @click="selectedComponent = 'Resources'"
           :class="{active: selectedComponent === 'Resources'}">Resources</li>
+        <li>
+          <router-link :to="{ name: 'ES6' }">ES6</router-link>
+        </li>
+        <li>
+          <router-link :to="{ name: 'WholeJavaScript' }">Whole JavaScript</router-link>
+        </li>
       </ul>
     </aside>
     <main>

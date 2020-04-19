@@ -2,7 +2,7 @@
   <section class="u-section-padding">
     <div class="l-wrap">
       <!-- BACK HOME -->
-      <router-link :to="{ name: 'Home' }" class="u-top-el">Back home</router-link>
+      <router-link :to="{ name: 'Home' }" class="u-mb-20">Back home</router-link>
 
       <div class="c-table-responsive">
         <table class="c-table">
@@ -335,7 +335,7 @@
         </table>
       </div><!-- /.c-table-responsive -->
       <div class="c-copy">
-        <h3 class="u-middle-el">Most Important Topics to Remember:</h3>
+        <h3 class="u-mt-20">Most Important Topics to Remember:</h3>
         <ol>
           <li>Creating Custom Post Type</li>
           <li>Creating Custom Query</li>
@@ -345,14 +345,14 @@
           <li>How to get desired posts by using filters in custom query</li>
           <li>Knowing different hooks</li>
         </ol>
-        <div class="u-middle-el">
-          <h3 class="u-top-el">Notes</h3>
+        <div class="u-mt-20">
+          <h3 class="u-mb-20">Notes</h3>
           <ul>
             <li>WordPress Default Pagination Works for only Default URL based Queries.</li>
           </ul>
         </div>
-        <div class="u-middle-el">
-          <h3 class="u-top-el">Most used and handy WordPress plugins list</h3>
+        <div class="u-mt-20">
+          <h3 class="u-mb-20">Most used and handy WordPress plugins list</h3>
           <ul>
             <li>Advanced Custom Field</li>
             <li>Regenerate Thumbnails</li>
@@ -362,7 +362,7 @@
           </ul>
         </div>
         <div>
-          <h3 class="u-top-el">WordPress Learning Resources</h3>
+          <h3 class="u-mb-20">WordPress Learning Resources</h3>
           <ul>
             <li><a href="https://developer.wordpress.org/reference/">WordPress Reference</a></li>
             <li><a href="https://learnwith.hasinhayder.com/wp/shop/wordpress-theme-development/">Learn With Hasin

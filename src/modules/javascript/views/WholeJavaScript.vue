@@ -4,7 +4,7 @@
       <div class="l-wrap">
         <div class="l-row">
           <div class="l-col l-col--md-10 l-col--offset-md-1">
-            <h1 class="u-top-el">Learn Enough JavaScript</h1>
+            <h1 class="u-mb-20">Learn Enough JavaScript</h1>
             <div class="c-box">
               <div style="color:#000;">
                 <h2 class="u-underline u-top-el">Table of Contents</h2>

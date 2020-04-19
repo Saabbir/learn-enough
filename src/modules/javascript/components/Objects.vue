@@ -4,9 +4,9 @@
     <h1 class="u-mb-20">JavaScript Objects</h1>
 
     <!-- Object -->
-    <section class="u-middle-el">
+    <section class="u-mb-20">
       <div class="c-box">
-        <h2 class="u-top-el">What is Object?</h2>
+        <h2 class="u-mb-20">What is Object?</h2>
         <p>
           A collection of name value pairs. It's that simple.
         </p>
@@ -16,11 +16,12 @@
     <!-- Object Dillema -->
     <section>
       <div class="c-box">
-        <h2 class="u-top-el">Function and Object dillema</h2>
+        <h2 class="u-mb-20">Function and Object dillema</h2>
         <p class="u-first-letter">Every function objects (including constructor functions) in javascript created from
           <code>Function</code> constructor. So, it is the last constructor function in the chain.</p>
-        <h3 class="u-middle-el">Examples:</h3>
-        <ul class="u-middle-el">
+
+        <h3 class="u-mt-40">Examples:</h3>
+        <ul class="u-mt-20">
           <li>
             <p><code>(function(){}).constructor.name === 'Function'</code> returns true.</p>
           </li>
@@ -48,8 +49,9 @@
           properties/methods from <code>Function.prototpe</code> object. That is unique to function objects only. Like
           <code>call</code>, <code>apply</code> methods only available to function objects. These methods are defined
           directly into the <code>Function.prototype</code> object.</p>
-        <h3 class="u-middle-el">Examples</h3>
-        <ul class="u-middle-el">
+
+        <h3 class="u-mt-40">Examples</h3>
+        <ul class="u-mt-20">
           <li><code>Function.prototype.hasOwnProperty('call') === true</code></li>
         </ul>
         <div class="u-section-divider"></div>
@@ -63,8 +65,9 @@
           still it has access ot <code>Object.prototype</code> object which is the last object in the prototype chain.
           Its
           prototype chain ends up with <code>null</code>.</p>
-        <h3 class="u-middle-el">Examples:</h3>
-        <ul class="u-bottom-el">
+          
+        <h3 class="u-mt-40">Examples:</h3>
+        <ul class="u-mt-20">
           <li>
             <p><code>Function.prototype.constructor.name === 'Function'</code> returns true.</p>
           </li>

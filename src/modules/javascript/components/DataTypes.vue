@@ -4,9 +4,9 @@
     <!-- Data Types -->
     <section>
       <div class="c-box">
-        <h2 class="u-top-el">How many data types in JavaScript?</h2>
+        <h2 class="u-mb-20">How many data types in JavaScript?</h2>
         <p>The latest ECMAScript standard defines seven data types:</p>
-        <ul class="u-middle-el u-pl-20">
+        <ul class="u-mt-20 u-pl-20">
           <li>Six data types that are primitives:
             <ul>
               <li>Null</li>
@@ -19,8 +19,8 @@
           </li>
           <li>and Object ( including function and array )</li>
         </ul>
-        <h3 class="u-middle-el">References</h3>
-        <ul class="u-bottom-el u-pl-20">
+        <h3 class="u-mt-40">References</h3>
+        <ul class="u-mt-20 u-pl-20">
           <li>
             <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures">Read MDN on data types in
               JavaScript</a>
@@ -34,9 +34,9 @@
     </section>
 
     <!-- Undefined -->
-    <section class="u-middle-el">
+    <section class="u-mt-20">
       <div class="c-box">
-        <h2 class="u-top-el">What is Undefined in JavaScript?</h2>
+        <h2 class="u-mb-20">What is Undefined in JavaScript?</h2>
         <p>
           It's a special value. Special keyword. A primitive data type.
           It is initially set to all the variables in the creation phase of the execution context by the JavaScript

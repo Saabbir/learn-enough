@@ -5,14 +5,14 @@
         <div class="l-col l-col--lg-10 l-col--offset-lg-1">
 
           <!-- BACK HOME -->
-          <router-link :to="{ name: 'Home' }" class="u-top-el">Back home</router-link>
+          <router-link :to="{ name: 'Home' }" class="u-mb-20">Back home</router-link>
 
           <article class="c-copy">
 
             <!-- PHP Overview -->
-            <section class="u-top-el">
+            <section class="u-mb-20">
 
-              <header class="u-top-el">
+              <header class="u-mb-20">
                 <h1><a href="https://en.wikipedia.org/wiki/PHP" target="_blank">PHP</a> stands for Hypertext Preprocessor</h1>
               </header>
 
@@ -28,7 +28,7 @@
                 The PHP script starts with the opening PHP tag and ends with the closing PHP tag. We call it PHP code block. The PHP code block looks like this:
               </p>
 
-              <div class="u-middle-el">
+              <div class="u-mt-20">
                 <img src="@/assets/php-code-block.png" alt="PHP Code Block">
               </div>
 

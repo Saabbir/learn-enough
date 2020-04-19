@@ -2,18 +2,18 @@
   <div class="c-copy">
 
     <!-- FUNCTION -->
-    <section class="c-copy">
+    <section>
       <h1 class="u-mb-20">JavaScript Function</h1>
       <div class="c-box">
-        <h2 class="u-top-el">What is a function in JavaScript?</h2>
-        <p>A function is a data/value in JavaScript, which can be stored in a variable/identifier and called by that
-          identifier. In JavaScript, functions are regular objects with the additional capability of being callable.</p>
-        <blockquote class="u-middle-el">
-          <p>Functions are objects in JavaScript. It differs from others as it's callable. This is a special and unique
-            feature to this object subtype.</p>
+
+        <h2 class="u-mb-20">What is a function in JavaScript?</h2>
+        <p>A function is a data/value in JavaScript, which can be stored in a variable/identifier and called by that identifier. In JavaScript, functions are regular objects with the additional capability of being callable.</p>
+        <blockquote class="u-mt-20">
+          <p>Functions are objects in JavaScript. It differs from others as it's callable. This is a special and unique feature to this object subtype.</p>
         </blockquote>
-        <h3 class="u-middle-el">Further Reading:</h3>
-        <ul class="u-bottom-el">
+
+        <h3 class="u-mt-40">Further Reading:</h3>
+        <ul class="u-mt-20">
           <li>
             <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions">MDN Guide on Functions</a>
           </li>
@@ -44,18 +44,21 @@
           </li>
         </ul>
       </div><!-- /.c-box -->
-      <blockquote class="u-middle-el">
+
+      <blockquote class="u-mt-20">
         <p>JavaScript function can or cannot return a value</p>
       </blockquote>
-      <blockquote class="u-bottom-el">
+
+      <blockquote class="u-mt-20">
         <p>If a JavaScript function doesn't return any value, it returns <code>undefined</code></p>
       </blockquote>
+      
     </section>
 
     <!-- FUNCTION CURRYING -->
-    <section class="u-bottom-el">
+    <section class="u-mt-20">
       <div class="c-box">
-        <h2 class="u-top-el">Function Currying</h2>
+        <h2 class="u-mb-20">Function Currying</h2>
         <p>
           Creating a copy of a function but with some preset parameters.
         </p>

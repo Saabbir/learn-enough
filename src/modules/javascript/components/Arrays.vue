@@ -4,8 +4,8 @@
     <!-- ARRAY PROPERTIES -->
     <section>
       <div class="c-box">
-        <h2 class="u-top-el">Most used array methods:</h2>
-        <ul class="u-bottom-el">
+        <h2 class="u-mb-20">Most used JavaScript array methods:</h2>
+        <ul>
           <li><a href="#">push()</a></li>
           <li><a href="#">pop()</a></li>
           <li><a href="#">shift()</a></li>

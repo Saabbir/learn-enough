@@ -5,7 +5,7 @@
     <section class="c-copy">
       <h1 class="u-mb-20">JavaScript Strings</h1>
       <div class="c-box">
-        <h2 class="u-top-el">What is the difference between string literals and string objects in JavaScript?</h2>
+        <h2 class="u-mb-20">What is the difference between string literals and string objects in JavaScript?</h2>
         <p>
           String literals (denoted by double or single quotes) and strings returned from String calls in a
           non-constructor
@@ -21,7 +21,7 @@
           <a
             href="https://stackoverflow.com/questions/17256182/what-is-the-difference-between-string-literals-and-string-objects-in-javascript">Reference</a>
         </p>
-        <h3 class="u-middle-el">Explanation</h3>
+        <h3 class="u-mt-40">Explanation</h3>
         <p>Whenever we try to access a property/method on a primitive string, JavaScript automatically converts the
           primitive string into a string object. So, <code>'Saabbir.length'</code> converts into <code>new
             String('Saabbir').length</code> behind the scene. That's why we can access all of those string methods on a
@@ -30,17 +30,18 @@
     </section>
 
     <!-- STRING OBJECT -->
-    <section class="u-middle-el">
+    <section class="u-mt-20">
       <div class="c-box">
-        <h2 class="u-top-el">What is a string object?</h2>
-        <p>Strings created from <code>String</code> constructor function in a constructor context (i.e, using the
-          <code>new</code> keyword) are string object.</p>
-        <h3 class="u-middle-el">Example:</h3>
+        <h2 class="u-mb-20">What is a string object?</h2>
+        <p>Strings created from <code>String</code> constructor function in a constructor context (i.e, using the <code>new</code> keyword) are string object.</p>
+
+        <h3 class="u-mt-40">Example:</h3>
         <p>
           <pre class="language-javascript line-numbers"><code>new String('Saabbir Hossain')</code></pre>
         </p>
-        <h3 class="u-middle-el">Note:</h3>
-        <ul class="u-bottom-el">
+
+        <h3 class="u-mt-40">Note:</h3>
+        <ul class="u-mt-20">
           <li>
             <p>Without using <code>new</code> operator, <code>String</code> function calls always returns string
               primitive
@@ -60,9 +61,9 @@
     </section>
 
     <!-- STRING PROTOTYPE CHAIN -->
-    <section class="u-bottom-el">
+    <section class="u-mt-20">
       <div class="c-box">
-        <h2 class="u-top-el">String Prototype Chain:</h2>
+        <h2 class="u-mb-20">String Prototype Chain:</h2>
         <pre class="language-javascript line-numbers"><code>new String('string').__proto__ === String.prototype
 String.prototype.__proto__ === Object.prototype
 Object.prototype.__proto__ === null</code></pre>

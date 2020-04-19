@@ -4,8 +4,8 @@
       <div class="l-row">
         <div class="l-col l-col--md-10 l-col--offset-md-1">
           <section class="c-box c-copy">
-            <h2 class="u-top-el">The most important features of ES2015</h2>
-            <ul class="u-bottom-el">
+            <h2 class="u-mb-20">The most important features of ES2015</h2>
+            <ul class="u-mt-20">
               <li>Block Scoping (<a
                   href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let">Let</a> and <a
                   href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">Const</a>)
@@ -44,15 +44,15 @@
           </section><!-- /.c-box -->
           <!-- Let and Const -->
           <section id="let-and-const" class="c-box u-bottom-el">
-            <h2 class="u-top-el">Let and Const</h2>
-            <h3 class="u-middle-el">Useful articles:</h3>
-            <ul class="u-middle-el">
+            <h2 class="u-mb-20">Let and Const</h2>
+            <h3 class="u-mt-20">Useful articles:</h3>
+            <ul class="u-mt-20">
               <li><a href="https://mathiasbynens.be/notes/es6-const">Mathias Bynens article on <code>let</code> and
                   <code>const</code></a></li>
             </ul>
-            <details class="u-bottom-el" open>
+            <details class="u-mt-20" open>
               <summary>Mathias Bynens article summary on <code>let</code> and <code>const</code></summary>
-              <ul class="u-bottom-el">
+              <ul class="u-mt-20">
                 <li>use <code>const</code> by default</li>
                 <li>only use <code>let</code> if rebinding is needed</li>
                 <li>(<code>var</code> shouldn’t be used in ES2015)</li>

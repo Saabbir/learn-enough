@@ -2,11 +2,10 @@
   <div class="c-copy">
 
     <div class="c-box">
-      <p>This page lists most commonly used client-side objects, properties, and methods. <b>This is not an exhaustive
-          list.</b></p>
+      <p>This page lists most commonly used client-side objects, properties, and methods. <strong>This is not an exhaustive list.</strong></p>
 
-      <h2 class="u-middle-el">Most popular <a href="https://developer.mozilla.org/en-US/docs/Web/API">Web APIs</a></h2>
-      <ul class="u-middle-el">
+      <h2 class="u-mt-40">Most popular <a href="https://developer.mozilla.org/en-US/docs/Web/API">Web APIs</a></h2>
+      <ul class="u-mt-20">
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model">CSSOM</a></li>
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">DOM</a></li>
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API">Geolocation API</a></li>
@@ -22,8 +21,8 @@
           latest information about next hot new API they are working on currently.</li>
       </ul>
 
-      <h2 class="u-middle-el">Most common interfaces/classes/constructors defined in above APIs</h2>
-      <ul class="u-middle-el">
+      <h2 class="u-mt-40">Most common interfaces/classes/constructors defined in above APIs</h2>
+      <ul class="u-mt-20">
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">Window</a></li>
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Location">Location</a></li>
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/History">History</a></li>
@@ -44,9 +43,9 @@
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer">DataTransfer</a></li>
       </ul>
 
-      <h2 class="u-middle-el">DOM Tree Structure as Tree of Nodes</h2>
+      <h2 class="u-mt-40">DOM Tree Structure as Tree of Nodes</h2>
       <p>The one at the bottom inherit properties and methods from the top.</p>
-      <ul class="u-bottom-el">
+      <ul class="u-mt-20">
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget">EventTarget</a>
           <ul>
             <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node">Node</a>

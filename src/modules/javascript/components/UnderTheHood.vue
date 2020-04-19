@@ -6,7 +6,7 @@
     <!-- Global Object -->
     <section class="u-mt-30">
       <div class="c-box">
-        <h2 class="u-top-el">What is Global?</h2>
+        <h2 class="u-mb-20">What is Global?</h2>
         <p>
           Code that aren't inside a function is global.
         </p>
@@ -20,15 +20,15 @@
     </section>
 
     <!-- Execution Context -->
-    <section class="u-middle-el">
+    <section class="u-mt-20">
       <div class="c-box">
-        <h2 class="u-top-el">What is the Execution Context in JavaScript?</h2>
+        <h2 class="u-mb-20">What is the Execution Context in JavaScript?</h2>
         <p>
           A wrapper to help manage the code that is running. There are lots of lexical environments. Which one is
           currently
           running is managed via execution contexts. It can contain things beyond what you've written in your code.
         </p>
-        <h3 class="u-middle-el">Details</h3>
+        <h3 class="u-mt-40">Details</h3>
         <p>
           When a webpage loads, JavaScript engine creates an execution context named global execution context. That is
           the
@@ -38,7 +38,7 @@
         <p>
           There are two types of execution context in JavaScript.
         </p>
-        <ul class="u-middle-el">
+        <ul class="u-mt-20">
           <li>Global Exection Context</li>
           <li>Function Execution Context</li>
         </ul>
@@ -69,8 +69,8 @@
           the
           initial value of undefined.
         </p>
-        <h3 class="u-middle-el">References</h3>
-        <ul class="u-bottom-el">
+        <h3 class="u-mt-40">References</h3>
+        <ul class="u-mt-20">
           <li>
             <a
               href="https://tylermcginnis.com/ultimate-guide-to-execution-contexts-hoisting-scopes-and-closures-in-javascript/">Ultimate
@@ -88,9 +88,9 @@
     </section>
 
     <!-- Syntax Parser -->
-    <section class="u-middle-el">
+    <section class="u-mt-20">
       <div class="c-box">
-        <h2 class="u-top-el">What is Syntax Parsers?</h2>
+        <h2 class="u-mb-20">What is Syntax Parsers?</h2>
         <p>
           A program that reads your code and determines what it does and if its grammar is valid. Your code isn't magic.
           Someone else wrote a program to translate your code into machine readable code.
@@ -99,9 +99,9 @@
     </section>
 
     <!-- Lexical Environment -->
-    <section class="u-middle-el">
+    <section class="u-mt-20">
       <div class="c-box">
-        <h2 class="u-top-el">What is Lexical Environment?</h2>
+        <h2 class="u-mb-20">What is Lexical Environment?</h2>
         <p>
           Where something sits physically in the code you write. A lexical environment exists is programming languages
           in
@@ -111,9 +111,9 @@
     </section>
 
     <!-- Identifier -->
-    <section class="u-bottom-el">
+    <section class="u-mt-20">
       <div class="c-box">
-        <h2 class="u-top-el">What is a identifier in JavaScript?</h2>
+        <h2 class="u-mb-20">What is a identifier in JavaScript?</h2>
         <p>A sequence of characters in the code that identifies a <strong>variable</strong>, <strong>function</strong>,
           or
           <strong>property</strong>.</p>
@@ -121,10 +121,11 @@
           undefined,
           null) by using any sequence of characters, that is a identifier.</p>
         <p><a href="https://developer.mozilla.org/en-US/docs/Glossary/Identifier">Reference</a></p>
-        <div class="u-bottom-el">
-          <h3 class="u-top-el">Examples</h3>
+
+        <div class="u-mt-40">
+          <h3 class="u-mb-20">Examples</h3>
           <p>The followings are all identifier.</p>
-          <ul class="u-bottom-el">
+          <ul class="u-mt-20">
             <li>Variable created using let, const, var</li>
             <li>Function created using function definition</li>
             <li>Function parameters/arguments</li>

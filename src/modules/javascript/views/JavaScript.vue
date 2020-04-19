@@ -45,9 +45,6 @@
     <main>
       <div class="l-wrap l-wrap--narrow l-wrap--no-padding">
 
-        <!-- Back Home -->
-        <router-link :to="{ name: 'Home' }" class="u-mb-10">Back home</router-link>
-
         <!-- Open Sidenav -->
         <div class="o-toggle-sidenav u-mb-20">
           <a @click.prevent="toggleSidenav" href="#">View table of contents</a>
@@ -119,7 +116,7 @@
       padding: 3rem 1.5rem;
 
       @media (min-width: 415px) {
-        padding: 3rem;
+        padding: 6rem 3rem;
       }
     }
   }

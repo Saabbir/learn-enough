@@ -4,7 +4,7 @@
     <!-- JSON -->
     <section>
       <div class="c-box">
-        <h2 class="u-top-el">JSON in JavaScript</h2>
+        <h2 class="u-mb-20">JSON in JavaScript</h2>
         <p>
           JSON isn't really a part of JavaScript. It's a subset of JavaScript. Stands for JavaScript object notation.
           Because it's inspired by JavaScript object literal syntax. Anything that is valid JSON is also valid

@@ -2,7 +2,7 @@
   <section class="u-section-padding">
     <div class="l-wrap">
       <!-- BACK HOME -->
-      <router-link :to="{ name: 'Home' }" class="u-top-el">Back home</router-link>
+      <router-link :to="{ name: 'Home' }" class="u-mb-20">Back home</router-link>
 
       <div class="c-table-responsive">
         <table class="c-table">

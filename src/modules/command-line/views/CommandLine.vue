@@ -4,7 +4,7 @@
       <div class="l-wrap">
 
         <!-- BACK HOME -->
-        <router-link :to="{ name: 'Home' }" class="u-top-el">Back home</router-link>
+        <router-link :to="{ name: 'Home' }" class="u-mb-20">Back home</router-link>
 
         <!-- MOST USED UNIX COMMANDS -->
         <div class="c-table-responsive">

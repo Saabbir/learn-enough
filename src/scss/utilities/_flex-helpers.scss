@@ -22,13 +22,17 @@
   justify-content: flex-end;
 }
 
+.u-fg-1 {
+  flex-grow: 1;
+}
+
 .u-space-between {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: -5px;
 
-  &>div {
+  & > div {
     padding: 5px;
   }
 }

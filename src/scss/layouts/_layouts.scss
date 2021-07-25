@@ -1,1 +1,7 @@
-@import './grid';
+@import "./grid";
+
+.l-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 70px);
+}

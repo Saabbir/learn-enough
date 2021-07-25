@@ -2,7 +2,7 @@
   <footer class="c-site-footer">
     <div class="l-wrap">
       <div class="c-site-footer__content">
-        <p class="c-site-footer__copyright-text">All rights reserved by <a href="https://saabbir.com/" target="_blank">Saabbir</a>
+        <p class="c-site-footer__copyright-text">All rights reserved by <a href="https://saabbir.github.io/" target="_blank">Saabbir</a>
         </p>
         <ul class="c-site-footer__social-icons">
           <li>

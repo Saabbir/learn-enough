@@ -1,11 +1,15 @@
 body {
-  font: 400 1.8rem/1.6 $nunito, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 400 1.8rem/1.6 $nunito, "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-  font: 700 4.2rem/1.2 $nunito;
+  font: 700 3.6rem/1.2 $nunito;
+
+  @media (min-width: 415px) {
+    font: 700 4.2rem/1.2 $nunito;
+  }
 }
 
 h2 {

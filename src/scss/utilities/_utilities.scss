@@ -1,14 +1,22 @@
-@import './margin';
-@import './padding';
-@import './flex-helpers';
-@import './text-helpers';
-@import './colors';
-@import './border';
-@import './misc';
-@import './position';
-@import './display';
+@import "./margin";
+@import "./padding";
+@import "./flex-helpers";
+@import "./text-helpers";
+@import "./colors";
+@import "./border";
+@import "./misc";
+@import "./position";
+@import "./display";
 
 .u-section-padding {
+  padding: 30px 0;
+}
+
+.u-section-padding-md {
+  padding: 40px 0;
+}
+
+.u-section-padding-lg {
   padding: 60px 0;
 }
 

@@ -1,34 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <!-- <link rel="icon" href="<%= BASE_URL %>favicon.ico"> -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://learn-enough.netlify.app/" />
+    <meta property="og:title" content="Learn Enough" />
+    <meta
+      property="og:description"
+      content="Learn Enough is a personal note taking website"
+    />
+    <meta property="og:image" content="https://vuejs.org/images/logo.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://learn-enough.netlify.app/" />
+    <meta name="twitter:title" content="Learn Enough" />
+    <meta
+      name="twitter:description"
+      content="Learn Enough is a personal note taking website"
+    />
+    <meta name="twitter:image" content="https://vuejs.org/images/logo.png" />
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="<%= BASE_URL %>apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<%= BASE_URL %>favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<%= BASE_URL %>favicon-16x16.png">
-    <link rel="manifest" href="<%= BASE_URL %>site.webmanifest">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+
+    <!-- Preconnect -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" crossorigin="" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="" />
+    <link href="https://use.fontawesome.com" rel="preconnect" crossorigin="" />
+    <link href="https://cdnjs.cloudflare.com" rel="preconnect" crossorigin="" />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
 
     <!-- Google Font Lato and Nunito -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i|Nunito:300,400,400i,600,700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i|Nunito:300,400,400i,600,700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- PrismJS CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"
+    />
 
     <!-- PrismJS Plugin Line Numbers CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.css">    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.css"
+    />
 
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
     </noscript>
     <div id="app"></div>
 

@@ -122,7 +122,7 @@
       padding: 3rem 1.5rem;
 
       @media (min-width: 415px) {
-        padding: 6rem 3rem;
+        padding: 3rem;
       }
     }
   }

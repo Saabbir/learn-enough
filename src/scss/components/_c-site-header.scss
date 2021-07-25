@@ -16,6 +16,7 @@
   }
 
   &__logo {
+    margin-right: 30px;
 
     a {
       color: #b2bbbd;
@@ -23,7 +24,7 @@
       font-weight: bold;
       height: 70px;
       display: flex;
-      transition: color .3s ease;
+      transition: color 0.3s ease;
 
       &:hover,
       &:focus {
@@ -45,21 +46,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
 
     ul {
-
       &:not(.dropdown) {
         display: flex;
       }
 
       li {
-
         a {
           color: #b2bbbd;
           line-height: 70px;
           padding: 0 15px;
           display: block;
+          transition: 0.2s;
 
           &:hover,
           &:focus {
@@ -68,16 +68,19 @@
           }
         }
 
-        &.active>a {
+        &.active > a {
+          color: #fff;
+        }
+
+        a.router-link-exact-active {
           color: #fff;
         }
 
         &.has-dropdown {
           position: relative;
-          transition: background-color .15s;
+          transition: background-color 0.15s;
 
           ul.dropdown {
-
             @media (min-width: 1024px) {
               position: absolute;
               width: 220px;
@@ -85,10 +88,10 @@
               padding: 10px 0;
               top: 100%;
               border-radius: 0 0 4px 4px;
-              box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
               transform: scale(1, 0);
               transform-origin: top;
-              transition: transform .15s;
+              transition: transform 0.15s;
             }
 
             &.left {
@@ -120,7 +123,7 @@
               background-color: darken($primaryColor, 5);
             }
 
-            &>a {
+            & > a {
               color: #fff;
             }
 
@@ -144,7 +147,7 @@
       background-color: transparent;
       color: #b2bbbd;
       cursor: pointer;
-      transition: .3s ease;
+      transition: 0.3s ease;
       display: none;
       position: relative;
 
@@ -174,8 +177,7 @@
       }
     }
 
-    @media(max-width: 1023px) {
-
+    @media (max-width: 1023px) {
       .toggle-mobile-nav {
         display: block;
       }

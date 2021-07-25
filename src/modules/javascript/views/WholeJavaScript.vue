@@ -1,6 +1,6 @@
 <template>
   <main class="site-main bg-white" role="main">
-    <section class="section-padding">
+    <section class="u-section-padding">
       <div class="l-wrap">
         <div class="l-row">
           <div class="l-col l-col--md-10 l-col--offset-md-1">

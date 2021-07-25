@@ -1,6 +1,6 @@
 <template>
   <header class="c-site-header" role="banner">
-    <div class="l-wrap l-wrap--full">
+    <div class="l-wrap">
       <nav class="c-site-header__navigation" role="navigation">
         <div class="c-site-header__logo">
           <router-link :to="{ name: 'Home' }">

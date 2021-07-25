@@ -1,6 +1,6 @@
 <template>
   <main class="site-main u-bg-white" role="main">
-    <section class="section-padding">
+    <section class="u-section-padding">
       <div class="l-wrap">
 
         <!-- BACK HOME -->

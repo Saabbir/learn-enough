@@ -4,12 +4,6 @@ body {
 
 .site-main {
   background-color: #edeff0;
-  flex-grow: 1;
-  padding: 40px 0;
-
-  @media (min-width: 768px) {
-    padding: 60px 0;
-  }
 }
 
 blockquote {
@@ -33,7 +27,7 @@ blockquote {
   border: 0;
   font: normal 400 26px/1 $nunito;
   text-decoration: none;
-  transition: .15s ease;
+  transition: 0.15s ease;
   opacity: 0;
   visibility: hidden;
 

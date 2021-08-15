@@ -2,11 +2,15 @@
   <section class="u-section-padding">
     <div class="l-wrap">
       <!-- BACK HOME -->
-      <router-link :to="{ name: 'Home' }" class="u-mb-20">Back home</router-link>
+      <router-link :to="{ name: 'Home' }" class="u-mb-20 u-text-underline"
+        >Back home</router-link
+      >
 
       <div class="c-table-responsive">
         <table class="c-table">
-          <caption>Learn Most Essential WordPress Functions</caption>
+          <caption>
+            Learn most essential WordPress functions
+          </caption>
           <thead>
             <tr>
               <th>Function Name</th>
@@ -28,7 +32,9 @@
             </tr>
             <tr>
               <td><code class="inline">the_title()</code></td>
-              <td>Display or retrieve the current post title with optional markup.</td>
+              <td>
+                Display or retrieve the current post title with optional markup.
+              </td>
             </tr>
             <tr>
               <td><code class="inline">the_content()</code></td>
@@ -84,8 +90,11 @@
             </tr>
             <tr>
               <td><code class="inline">site_url()</code></td>
-              <td>Retrieves the URL for the current site where WordPress application files (e.g. wp-blog-header.php or
-                the wp-admin/ folder) are accessible.</td>
+              <td>
+                Retrieves the URL for the current site where WordPress
+                application files (e.g. wp-blog-header.php or the wp-admin/
+                folder) are accessible.
+              </td>
             </tr>
             <tr>
               <td><code class="inline">home_url()</code></td>
@@ -104,7 +113,9 @@
             </tr>
             <tr>
               <td><code class="inline">get_the_ID()</code></td>
-              <td>Retrieve the ID of the current item in the WordPress Loop.</td>
+              <td>
+                Retrieve the ID of the current item in the WordPress Loop.
+              </td>
             </tr>
             <tr>
               <td><code class="inline">wp_get_post_parent_id()</code></td>
@@ -116,7 +127,9 @@
             </tr>
             <tr>
               <td><code class="inline">get_permalink()</code></td>
-              <td>Retrieves the full permalink for the current post or post ID.</td>
+              <td>
+                Retrieves the full permalink for the current post or post ID.
+              </td>
             </tr>
             <tr>
               <td><code class="inline">get_the_permalink()</code></td>
@@ -124,7 +137,10 @@
             </tr>
             <tr>
               <td><code class="inline">wp_list_pages()</code></td>
-              <td>Retrieve or display a list of pages (or hierarchical post type items) in list (li) format.</td>
+              <td>
+                Retrieve or display a list of pages (or hierarchical post type
+                items) in list (li) format.
+              </td>
             </tr>
             <tr>
               <td><code class="inline">language_attributes()</code></td>
@@ -136,7 +152,10 @@
             </tr>
             <tr>
               <td><code class="inline">the_author_posts_link()</code></td>
-              <td>Displays an HTML link to the author page of the current post’s author.</td>
+              <td>
+                Displays an HTML link to the author page of the current post’s
+                author.
+              </td>
             </tr>
             <tr>
               <td><code class="inline">the_time()</code></td>
@@ -144,7 +163,10 @@
             </tr>
             <tr>
               <td><code class="inline">get_the_category_list()</code></td>
-              <td>Retrieve category list for a post in either HTML list or custom format.</td>
+              <td>
+                Retrieve category list for a post in either HTML list or custom
+                format.
+              </td>
             </tr>
             <tr>
               <td><code class="inline">paginate_links()</code></td>
@@ -152,7 +174,10 @@
             </tr>
             <tr>
               <td><code class="inline">is_category()</code></td>
-              <td>Determines whether the query is for an existing category archive page.</td>
+              <td>
+                Determines whether the query is for an existing category archive
+                page.
+              </td>
             </tr>
             <tr>
               <td><code class="inline">single_cat_title()</code></td>
@@ -160,7 +185,10 @@
             </tr>
             <tr>
               <td><code class="inline">is_author()</code></td>
-              <td>Determines whether the query is for an existing author archive page.</td>
+              <td>
+                Determines whether the query is for an existing author archive
+                page.
+              </td>
             </tr>
             <tr>
               <td><code class="inline">the_author()</code></td>
@@ -196,8 +224,10 @@
             </tr>
             <tr>
               <td><code class="inline">wp_reset_postdata()</code></td>
-              <td>After looping through a separate query, this function restores the $post global to the current post in
-                the main query.</td>
+              <td>
+                After looping through a separate query, this function restores
+                the $post global to the current post in the main query.
+              </td>
             </tr>
             <tr>
               <td><code class="inline">register_post_type()</code></td>
@@ -209,11 +239,16 @@
             </tr>
             <tr>
               <td><code class="inline">get_post_type()</code></td>
-              <td>Retrieves the post type of the current post or of a given post.</td>
+              <td>
+                Retrieves the post type of the current post or of a given post.
+              </td>
             </tr>
             <tr>
               <td><code class="inline">is_admin()</code></td>
-              <td>Determines whether the current request is for an administrative interface page.</td>
+              <td>
+                Determines whether the current request is for an administrative
+                interface page.
+              </td>
             </tr>
             <tr>
               <td><code class="inline">get_query_var()</code></td>
@@ -221,7 +256,9 @@
             </tr>
             <tr>
               <td><code class="inline">is_page()</code></td>
-              <td>Determines whether the query is for an existing single page.</td>
+              <td>
+                Determines whether the query is for an existing single page.
+              </td>
             </tr>
             <tr>
               <td><code class="inline">is_home()</code></td>
@@ -321,7 +358,11 @@
             </tr>
             <!-- Advanced Custom Field Functions -->
             <tr class="info">
-              <td colspan="2"><strong>2 Most Important Advanced Custom Field Fucntions</strong></td>
+              <td colspan="2">
+                <strong
+                  >2 Most Important Advanced Custom Field Fucntions</strong
+                >
+              </td>
             </tr>
             <tr>
               <td><code class="inline">the_field()</code></td>
@@ -333,10 +374,11 @@
             </tr>
           </tbody>
         </table>
-      </div><!-- /.c-table-responsive -->
+      </div>
+      <!-- /.c-table-responsive -->
       <div class="c-copy">
-        <h3 class="u-mt-20">Most Important Topics to Remember:</h3>
-        <ol>
+        <h3 class="u-mt-20">Most important topics to remember:</h3>
+        <ul>
           <li>Creating Custom Post Type</li>
           <li>Creating Custom Query</li>
           <li>Creating Custom Field</li>
@@ -344,11 +386,14 @@
           <li>Relationship between two posts from different post type</li>
           <li>How to get desired posts by using filters in custom query</li>
           <li>Knowing different hooks</li>
-        </ol>
+        </ul>
         <div class="u-mt-40">
           <h3 class="u-mb-20">Notes</h3>
           <ul>
-            <li>WordPress Default Pagination Works for only Default URL based Queries.</li>
+            <li>
+              WordPress Default Pagination Works for only Default URL based
+              Queries.
+            </li>
           </ul>
         </div>
         <div class="u-mt-40">
@@ -362,21 +407,35 @@
           </ul>
         </div>
         <div class="u-mt-40">
-          <h3 class="u-mb-20">WordPress Learning Resources</h3>
+          <h3 class="u-mb-20">WordPress learning resources</h3>
           <ul>
-            <li><a href="https://developer.wordpress.org/reference/">WordPress Reference</a></li>
-            <li><a href="https://learnwith.hasinhayder.com/wp/shop/wordpress-theme-development/">Learn With Hasin
-                Hayder</a></li>
-            <li><a href="https://websitesetup.org/">How to Create a Website using WordPress</a></li>
+            <li>
+              <a href="https://developer.wordpress.org/reference/"
+                >WordPress Reference</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://learnwith.hasinhayder.com/wp/shop/wordpress-theme-development/"
+                >Learn With Hasin Hayder</a
+              >
+            </li>
+            <li>
+              <a href="https://websitesetup.org/"
+                >How to Create a Website using WordPress</a
+              >
+            </li>
           </ul>
         </div>
-      </div><!-- /.c-copy -->
-    </div><!-- /.l-wrap -->
+      </div>
+      <!-- /.c-copy -->
+    </div>
+    <!-- /.l-wrap -->
   </section>
 </template>
 
 <script>
-  export default {
-    name: 'WordPress'
-  }
+export default {
+  name: "WordPress",
+};
 </script>

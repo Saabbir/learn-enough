@@ -3,14 +3,17 @@
     <div class="l-wrap">
       <nav class="c-site-header__navigation" role="navigation">
         <div class="c-site-header__logo">
-          <router-link :to="{ name: 'Home' }">
-            <img src="../assets/logo-white.png" alt="Logo">
+          <router-link :to="{ name: 'Home' }" class="c-site-header__logo-link">
+            <span class="c-site-header__logo-text-learn">learn</span>
+            <span class="c-site-header__logo-text-enough">Enough</span>
           </router-link>
         </div>
         <button class="toggle-mobile-nav"></button>
         <ul class="menu">
           <li>
-            <router-link :to="{ name: 'CommandLine' }">Command Line</router-link>
+            <router-link :to="{ name: 'CommandLine' }"
+              >Command Line</router-link
+            >
           </li>
           <li>
             <router-link :to="{ name: 'TextEditor' }">Text Editor</router-link>
@@ -29,25 +32,26 @@
           </li>
         </ul>
       </nav>
-    </div><!-- /.l-wrap -->
+    </div>
+    <!-- /.l-wrap -->
   </header>
 </template>
 
 <script>
 export default {
-  name: 'Header',
+  name: "Header",
   mounted() {
     /**
      * Mobile Menu Functionality
      */
-    !function(){
-      const menuToggleBtn = document.querySelector('.toggle-mobile-nav')
-      const menu = document.querySelector('.menu')
-      menuToggleBtn.addEventListener('click', function() {
-        menu.classList.toggle('show')
-        this.classList.toggle('active')
-      })
-    }()
-  }
-}
+    !(function () {
+      const menuToggleBtn = document.querySelector(".toggle-mobile-nav");
+      const menu = document.querySelector(".menu");
+      menuToggleBtn.addEventListener("click", function () {
+        menu.classList.toggle("show");
+        this.classList.toggle("active");
+      });
+    })();
+  },
+};
 </script>

@@ -1,7 +1,7 @@
 .l-wrap {
   max-width: 1130px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
 
@@ -26,10 +26,19 @@
 .l-row {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  margin: 0 -16px -16px;
+
+  @media (min-width: 768px) {
+    margin-bottom: -32px;
+  }
 
   .l-col {
-    padding: 15px;
+    padding: 0 16px;
+    margin-bottom: 16px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 32px;
+    }
 
     & > div,
     & > section {

@@ -2,14 +2,17 @@
   <main class="site-main u-bg-white" role="main">
     <section class="u-section-padding">
       <div class="l-wrap">
-
         <!-- BACK HOME -->
-        <router-link :to="{ name: 'Home' }" class="u-mb-20">Back home</router-link>
+        <router-link :to="{ name: 'Home' }" class="u-mb-20 u-text-underline"
+          >Back home</router-link
+        >
 
         <!-- MOST USED UNIX COMMANDS -->
         <div class="c-table-responsive">
           <table class="c-table">
-            <caption>Most used UNIX commands</caption>
+            <caption>
+              Most used UNIX commands
+            </caption>
             <thead>
               <tr>
                 <th>Command</th>
@@ -18,22 +21,33 @@
             </thead>
             <tbody>
               <tr
-                v-for="(command, index) in data.mostUsedUnixCommands" :key="index">
-                <td><code class="inline">{{ command.name }}</code></td>
+                v-for="(command, index) in data.mostUsedUnixCommands"
+                :key="index"
+              >
                 <td>
-                  {{ command.description }} 
+                  <code class="inline">{{ command.name }}</code>
+                </td>
+                <td>
+                  {{ command.description }}
                   <a v-if="command.link" :href="command.link">Learn more</a>
                 </td>
               </tr>
             </tbody>
           </table>
-        </div><!-- /.c-table-responsive -->
+        </div>
+        <!-- /.c-table-responsive -->
 
         <!-- SUMMARY OF RITHM SCHOOL TERMINAL COURSE -->
         <div class="c-table-responsive">
           <table class="c-table">
-            <caption>Summary of <a href="https://www.rithmschool.com/courses/terminal" target="_blank">Terminal and UNIX Course from
-                (Rithm School)</a></caption>
+            <caption>
+              Summary of
+              <a
+                href="https://www.rithmschool.com/courses/terminal"
+                target="_blank"
+                >Terminal and UNIX Course from (Rithm School)</a
+              >
+            </caption>
             <thead>
               <tr>
                 <th>Command</th>
@@ -61,37 +75,54 @@
               <tr>
                 <td><code class="inline">ls</code></td>
                 <td>list</td>
-                <td>List information about the FILEs (the current directory by default). Sort entries alphabetically by
-                  default.</td>
+                <td>
+                  List information about the FILEs (the current directory by
+                  default). Sort entries alphabetically by default.
+                </td>
               </tr>
               <tr>
                 <td><code class="inline">ls --help</code></td>
                 <td></td>
-                <td>Pass <code class="inline">--help</code> option to any UNIX command to know details about this
-                  command.</td>
+                <td>
+                  Pass <code class="inline">--help</code> option to any UNIX
+                  command to know details about this command.
+                </td>
               </tr>
               <tr>
                 <td><code class="inline">ls -l</code></td>
                 <td></td>
-                <td>Pass <code class="inline">-l</code> option to get a long listing format.</td>
+                <td>
+                  Pass <code class="inline">-l</code> option to get a long
+                  listing format.
+                </td>
               </tr>
               <tr>
                 <td><code class="inline">ls -a</code></td>
                 <td></td>
-                <td>Pass <code class="inline">-a</code> or <code class="inline">--all</code> option to get all entries
-                  including hidden folders (starting with dot).</td>
+                <td>
+                  Pass <code class="inline">-a</code> or
+                  <code class="inline">--all</code> option to get all entries
+                  including hidden folders (starting with dot).
+                </td>
               </tr>
               <tr>
                 <td><code class="inline">ls -l -a</code></td>
                 <td></td>
-                <td>Pass both <code class="inline">-l</code> and <code class="inline">-a</code> option to get all
-                  entries including hidden folders (starting with dot) and a long listing format.</td>
+                <td>
+                  Pass both <code class="inline">-l</code> and
+                  <code class="inline">-a</code> option to get all entries
+                  including hidden folders (starting with dot) and a long
+                  listing format.
+                </td>
               </tr>
               <tr>
                 <td><code class="inline">ls -la</code></td>
                 <td></td>
-                <td>Pass both option combined (<code class="inline">-la</code>) to get all entries including hidden
-                  folders (starting with dot) and a long listing format.</td>
+                <td>
+                  Pass both option combined (<code class="inline">-la</code>) to
+                  get all entries including hidden folders (starting with dot)
+                  and a long listing format.
+                </td>
               </tr>
               <tr class="info">
                 <td colspan="3">Moving Around / Navigating in Terminal</td>
@@ -135,9 +166,13 @@
                 <td>Make one directory called FOLDER_NAME</td>
               </tr>
               <tr>
-                <td><code class="inline">mkdir FOLDER_NAME1 FOLDER_NAME2</code></td>
+                <td>
+                  <code class="inline">mkdir FOLDER_NAME1 FOLDER_NAME2</code>
+                </td>
                 <td></td>
-                <td>Make two directory called FOLDER_NAME1 and FOLDER_NAME 2</td>
+                <td>
+                  Make two directory called FOLDER_NAME1 and FOLDER_NAME 2
+                </td>
               </tr>
               <tr>
                 <td><code class="inline">touch FILENAME</code></td>
@@ -170,7 +205,10 @@
               <tr>
                 <td><code class="inline">less file.txt</code></td>
                 <td></td>
-                <td>Display contents of the file.txt in a modal. Enter q to exit the modal</td>
+                <td>
+                  Display contents of the file.txt in a modal. Enter q to exit
+                  the modal
+                </td>
               </tr>
               <tr>
                 <td><code class="inline">echo</code></td>
@@ -183,7 +221,9 @@
                 <td>Writes Hello World to the terminal</td>
               </tr>
               <tr>
-                <td><code class="inline">echo "Hello World" > FILE_NAME</code></td>
+                <td>
+                  <code class="inline">echo "Hello World" > FILE_NAME</code>
+                </td>
                 <td></td>
                 <td>Writes Hello World to the FILE_NAME file</td>
               </tr>
@@ -208,7 +248,10 @@
               <tr>
                 <td><code class="inline">start .</code></td>
                 <td></td>
-                <td>Open all the files and folder of the current directory into explorer</td>
+                <td>
+                  Open all the files and folder of the current directory into
+                  explorer
+                </td>
               </tr>
               <tr class="info">
                 <td colspan="3">Moving Files And Folders</td>
@@ -286,12 +329,20 @@
               </tr>
             </tbody>
           </table>
-        </div><!-- /.c-table-responsive -->
+        </div>
+        <!-- /.c-table-responsive -->
 
         <!-- SUMMARY OF LEARN ENOUGH COMMAND LINE TO BE DANGEROUS -->
         <div class="c-table-responsive">
           <table class="c-table">
-            <caption>Summary of <a href="https://www.learnenough.com/command-line-tutorial" target="_blank">learn enough command line to be dangerous</a></caption>
+            <caption>
+              Summary of
+              <a
+                href="https://www.learnenough.com/command-line-tutorial"
+                target="_blank"
+                >learn enough command line to be dangerous</a
+              >
+            </caption>
             <thead>
               <tr>
                 <th>Command</th>
@@ -300,28 +351,38 @@
               </tr>
             </thead>
             <tbody>
-              <tr 
+              <tr
                 v-for="(command, index) in data.generalUnixCommands"
-                :key="index">
+                :key="index"
+              >
                 <td>
                   <code class="inline">{{ command.name }}</code>
                 </td>
                 <td>{{ command.description }}</td>
-                <td><code class="inline" v-if="command.example">{{ command.example }}</code></td>
+                <td>
+                  <code class="inline" v-if="command.example">{{
+                    command.example
+                  }}</code>
+                </td>
               </tr>
             </tbody>
             <tfoot>
               <tr>
-                <td colspan="3">*** String inside [] (brackets) are variables.</td>
+                <td colspan="3">
+                  *** String inside [] (brackets) are variables.
+                </td>
               </tr>
             </tfoot>
           </table>
-        </div><!-- /.c-table-responsive -->
+        </div>
+        <!-- /.c-table-responsive -->
 
         <!-- THE MOST IMPORTANT LESS COMMANDS -->
         <div class="c-table-responsive">
           <table class="c-table">
-            <caption>The most important less commands</caption>
+            <caption>
+              The most important less commands
+            </caption>
             <thead>
               <th>Command</th>
               <th>Description</th>
@@ -390,50 +451,65 @@
               </tr>
               <tr>
                 <td colspan="3">
-                  <a href="https://en.wikipedia.org/wiki/Less_(Unix)">Wikipedia page on <code
-                      class="inline">less</code></a>
+                  <a href="https://en.wikipedia.org/wiki/Less_(Unix)"
+                    >Wikipedia page on <code class="inline">less</code></a
+                  >
                 </td>
               </tr>
             </tfoot>
           </table>
-        </div><!-- /.c-table-responsive -->
+        </div>
+        <!-- /.c-table-responsive -->
 
         <!-- REFERENCE LINKS -->
         <div class="c-table-responsive">
           <table class="c-table">
-            <caption>References</caption>
+            <caption>
+              References
+            </caption>
             <tbody>
               <tr>
                 <td>
-                  <a href="https://www.gnu.org/software/coreutils/manual/html_node/index.html">Official GNU Manual</a>
+                  <a
+                    href="https://www.gnu.org/software/coreutils/manual/html_node/index.html"
+                    >Official GNU Manual</a
+                  >
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a href="https://en.wikipedia.org/wiki/List_of_Unix_commands">List of Unix commands (Wikipedia
-                    page)</a>
+                  <a href="https://en.wikipedia.org/wiki/List_of_Unix_commands"
+                    >List of Unix commands (Wikipedia page)</a
+                  >
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a href="https://www.computerhope.com/unix/overview.htm">Overview of Unix and Linux commands
-                    (Computerhope)</a>
+                  <a href="https://www.computerhope.com/unix/overview.htm"
+                    >Overview of Unix and Linux commands (Computerhope)</a
+                  >
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a href="https://www.computerhope.com/unix.htm">Unix and Linux Commands Help (Computerhope)</a>
+                  <a href="https://www.computerhope.com/unix.htm"
+                    >Unix and Linux Commands Help (Computerhope)</a
+                  >
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a href="https://ss64.com/bash/">An A-Z Index of the Bash command line for Linux (ss64)</a>
+                  <a href="https://ss64.com/bash/"
+                    >An A-Z Index of the Bash command line for Linux (ss64)</a
+                  >
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a href="https://fossbytes.com/a-z-list-linux-command-line-reference/">The Ultimate A To Z List of
-                    Linux Commands (Fossbytes)</a>
+                  <a
+                    href="https://fossbytes.com/a-z-list-linux-command-line-reference/"
+                    >The Ultimate A To Z List of Linux Commands (Fossbytes)</a
+                  >
                 </td>
               </tr>
               <tr class="info">
@@ -441,111 +517,159 @@
               </tr>
               <tr>
                 <td>
-                  <a href="https://ss64.com/nt/">An A-Z Index of the Windows CMD command line (ss64)</a>
+                  <a href="https://ss64.com/nt/"
+                    >An A-Z Index of the Windows CMD command line (ss64)</a
+                  >
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a href="https://fossbytes.com/complete-windows-cmd-commands-list-index/">The Ultimate A to Z List Of
-                    Windows CMD Commands (Fossbytes)</a>
+                  <a
+                    href="https://fossbytes.com/complete-windows-cmd-commands-list-index/"
+                    >The Ultimate A to Z List Of Windows CMD Commands
+                    (Fossbytes)</a
+                  >
                 </td>
               </tr>
             </tbody>
           </table>
-        </div><!-- /.c-table-responsive -->
+        </div>
+        <!-- /.c-table-responsive -->
 
-        <!-- FURTHER READING -->
+        <!-- Further reading -->
         <div class="c-table-responsive">
           <table class="c-table">
-            <caption>Further reading</caption>
+            <caption>
+              Further reading
+            </caption>
             <tbody>
               <tr>
                 <td>
-                  <a href="https://kb.iu.edu/d/agat">What is Unix? (Indiana University)</a>
+                  <a href="https://kb.iu.edu/d/agat"
+                    >What is Unix? (Indiana University)</a
+                  >
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a href="https://kb.iu.edu/d/afsk">Introduction to Unix commands (Indiana University)</a>
+                  <a href="https://kb.iu.edu/d/afsk"
+                    >Introduction to Unix commands (Indiana University)</a
+                  >
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a href="http://www.ee.surrey.ac.uk/Teaching/Unix/">UNIX Tutorial for Beginners (University of
-                    Surrey)</a>
+                  <a href="http://www.ee.surrey.ac.uk/Teaching/Unix/"
+                    >UNIX Tutorial for Beginners (University of Surrey)</a
+                  >
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a href="http://mally.stanford.edu/~sr/computing/basic-unix.html">Basic UNIX commands (Stanford
-                    University)</a>
+                  <a
+                    href="http://mally.stanford.edu/~sr/computing/basic-unix.html"
+                    >Basic UNIX commands (Stanford University)</a
+                  >
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a href="https://www.guru99.com/introduction-linux.html">Linux Beginner Tutorials (Guru99)</a>
+                  <a href="https://www.guru99.com/introduction-linux.html"
+                    >Linux Beginner Tutorials (Guru99)</a
+                  >
                 </td>
               </tr>
             </tbody>
           </table>
-        </div><!-- /.c-table-responsive -->
+        </div>
+        <!-- /.c-table-responsive -->
 
         <!-- REFERENCE BOOKS -->
         <div class="c-table-responsive">
           <table class="c-table">
-            <caption>Recommened Books</caption>
+            <caption>
+              Recommened books
+            </caption>
             <tbody>
               <tr>
                 <td>
-                  <a href="http://www.ee.surrey.ac.uk/Teaching/Unix/books-uk.html">Recommended UNIX Books (University of
-                    Surrey)</a>
+                  <a
+                    href="http://www.ee.surrey.ac.uk/Teaching/Unix/books-uk.html"
+                    >Recommended UNIX Books (University of Surrey)</a
+                  >
                 </td>
               </tr>
             </tbody>
           </table>
-        </div><!-- /.c-table-responsive -->
+        </div>
+        <!-- /.c-table-responsive -->
 
         <!-- NOTES -->
         <div class="c-table-responsive">
           <table class="c-table">
-            <caption>Notes</caption>
+            <caption>
+              Notes
+            </caption>
             <tbody>
               <tr>
-                <td>In the Git Bash on windows, <code class="inline">/</code> represents root directory.</td>
-              </tr>
-              <tr>
-                <td>In the Command Prompt on windows, <code class="inline">C:\></code> represents root directory.</td>
-              </tr>
-              <tr>
-                <td>In the Git Bash on windows, <code class="inline">~</code> (tilde) represents home directory. Which
-                  is <code class="inline">/c/Users/Saabbir</code></td>
-              </tr>
-              <tr>
-                <td>In the Command Prompt on windows, <code class="inline">C:\Users\Saabbir></code> represents home
-                  directory.</td>
-              </tr>
-              <tr>
-                <td>In the Git Bash on windows, <code class="inline">cd /</code> (forwardslash) will take you to the
-                  root directory.</td>
-              </tr>
-              <tr>
-                <td>In the Command Prompt on windows, <code class="inline">cd \</code> (backslash) will take you to the
-                  root directory.</td>
-              </tr>
-              <tr>
                 <td>
-                  In the command-line, control key (<code class="inline">Ctrl</code>) usually written as <code
-                    class="inline">^</code>
+                  In the Git Bash on windows,
+                  <code class="inline">/</code> represents root directory.
                 </td>
               </tr>
               <tr>
                 <td>
-                  Combined keyboard shortcut like <code class="inline">Ctrl+C</code> doesn't have to be uppercase.
+                  In the Command Prompt on windows,
+                  <code class="inline">C:\></code> represents root directory.
                 </td>
               </tr>
               <tr>
                 <td>
-                  Pressing up arrow key in the keyboard will get you the previous command you executed.
+                  In the Git Bash on windows,
+                  <code class="inline">~</code> (tilde) represents home
+                  directory. Which is
+                  <code class="inline">/c/Users/Saabbir</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  In the Command Prompt on windows,
+                  <code class="inline">C:\Users\Saabbir></code> represents home
+                  directory.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  In the Git Bash on windows,
+                  <code class="inline">cd /</code> (forwardslash) will take you
+                  to the root directory.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  In the Command Prompt on windows,
+                  <code class="inline">cd \</code> (backslash) will take you to
+                  the root directory.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  In the command-line, control key (<code class="inline"
+                    >Ctrl</code
+                  >) usually written as <code class="inline">^</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Combined keyboard shortcut like
+                  <code class="inline">Ctrl+C</code> doesn't have to be
+                  uppercase.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Pressing up arrow key in the keyboard will get you the
+                  previous command you executed.
                 </td>
               </tr>
               <tr>
@@ -553,12 +677,15 @@
               </tr>
             </tbody>
           </table>
-        </div><!-- /.c-table-responsive -->
+        </div>
+        <!-- /.c-table-responsive -->
 
-        <!-- KEYBOARD SHORTCUTS -->
+        <!-- Keyboard shortcuts -->
         <div class="c-table-responsive">
           <table class="c-table">
-            <caption>Keyboard Shortcuts</caption>
+            <caption>
+              Keyboard shortcuts
+            </caption>
             <thead>
               <th>Shortcut</th>
               <th>Description</th>
@@ -580,41 +707,58 @@
                 <td>
                   <code class="inline">^U</code>
                 </td>
-                <td>Clears to the beginning of the line and lets us start over.</td>
+                <td>
+                  Clears to the beginning of the line and lets us start over.
+                </td>
               </tr>
               <tr>
                 <td>
                   <code class="inline">^C</code>
                 </td>
-                <td>Get out of any trouble. Like terminal gets hang or not taking any command.</td>
+                <td>
+                  Get out of any trouble. Like terminal gets hang or not taking
+                  any command.
+                </td>
               </tr>
               <tr>
                 <td>
                   <code class="inline">^L</code>
                 </td>
-                <td>To clear the screen. Similiar to the <code class="inline">clear</code> command.</td>
+                <td>
+                  To clear the screen. Similiar to the
+                  <code class="inline">clear</code> command.
+                </td>
               </tr>
               <tr>
                 <td>
                   <code class="inline">^D</code>
                 </td>
-                <td>To exit the window. Similiar to the <code class="inline">exit</code> command.</td>
+                <td>
+                  To exit the window. Similiar to the
+                  <code class="inline">exit</code> command.
+                </td>
               </tr>
             </tbody>
             <tfoot>
               <tr>
-                <td colspan="2">*** In here, <code class="inline">^</code> key represents <code
-                    class="inline">Ctrl</code> key. Therefore, <code class="inline">^A</code> = <code
-                    class="inline">Ctrl+A</code></td>
+                <td colspan="2">
+                  *** In here, <code class="inline">^</code> key represents
+                  <code class="inline">Ctrl</code> key. Therefore,
+                  <code class="inline">^A</code> =
+                  <code class="inline">Ctrl+A</code>
+                </td>
               </tr>
             </tfoot>
           </table>
-        </div><!-- /.c-table-responsive -->
+        </div>
+        <!-- /.c-table-responsive -->
 
-        <!-- WINDOWS COMMAND PROMPT COMMANDS -->
+        <!-- Windows command prompt commands -->
         <div class="c-table-responsive">
           <table class="c-table">
-            <caption>Windows Command Prompt Commands</caption>
+            <caption>
+              Windows command prompt commands
+            </caption>
             <thead>
               <tr>
                 <th>Command</th>
@@ -624,31 +768,38 @@
             <tbody>
               <tr>
                 <td><code class="inline">dir</code></td>
-                <td>To list all the files and folders in the current directory. Similiar to the <code
-                    class="inline">ls</code> UNIX command.</td>
+                <td>
+                  To list all the files and folders in the current directory.
+                  Similiar to the <code class="inline">ls</code> UNIX command.
+                </td>
               </tr>
               <tr>
                 <td><code class="inline">cls</code></td>
-                <td>Clear the current window by moving the cursor at the top. Similiar to the <code
-                    class="inline">clear</code> UNIX command.</td>
+                <td>
+                  Clear the current window by moving the cursor at the top.
+                  Similiar to the <code class="inline">clear</code> UNIX
+                  command.
+                </td>
               </tr>
             </tbody>
           </table>
-        </div><!-- /.c-table-responsive -->
-      </div><!-- /.l-wrap -->
+        </div>
+        <!-- /.c-table-responsive -->
+      </div>
+      <!-- /.l-wrap -->
     </section>
   </main>
 </template>
 
 <script>
-  import data from '../data/data.js'
+import data from "../data/data.js";
 
-  export default {
-    name: 'CommandLine',
-    data() {
-      return {
-        data
-      }
-    }
-  }
+export default {
+  name: "CommandLine",
+  data() {
+    return {
+      data,
+    };
+  },
+};
 </script>

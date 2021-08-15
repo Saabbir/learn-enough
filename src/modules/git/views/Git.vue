@@ -2,11 +2,15 @@
   <section class="u-section-padding">
     <div class="l-wrap">
       <!-- BACK HOME -->
-      <router-link :to="{ name: 'Home' }" class="u-mb-20">Back home</router-link>
+      <router-link :to="{ name: 'Home' }" class="u-mb-20 u-text-underline"
+        >Back home</router-link
+      >
 
       <div class="c-table-responsive">
         <table class="c-table">
-          <caption>Learn Enough Git</caption>
+          <caption>
+            Learn enough Git
+          </caption>
           <thead>
             <tr>
               <th>Command</th>
@@ -22,15 +26,25 @@
               <td>To see all the configuration settings.</td>
             </tr>
             <tr>
-              <td><code class="inline">git config --global user.name "John Doe"</code></td>
+              <td>
+                <code class="inline"
+                  >git config --global user.name "John Doe"</code
+                >
+              </td>
               <td>To setup global user name for the system.</td>
             </tr>
             <tr>
-              <td><code class="inline">git config --global user.email johndoe@example.com</code></td>
+              <td>
+                <code class="inline"
+                  >git config --global user.email johndoe@example.com</code
+                >
+              </td>
               <td>To setup global email address for the system.</td>
             </tr>
             <tr>
-              <td><code class="inline">git config --global core.editor vim</code></td>
+              <td>
+                <code class="inline">git config --global core.editor vim</code>
+              </td>
               <td>To setup global editor to use in git.</td>
             </tr>
             <tr class="info">
@@ -86,7 +100,11 @@
               <td>To see the remote name and url.</td>
             </tr>
             <tr>
-              <td><code class="inline">git remote add [REMOTE_NAME] [REMOTE_URL]</code></td>
+              <td>
+                <code class="inline"
+                  >git remote add [REMOTE_NAME] [REMOTE_URL]</code
+                >
+              </td>
               <td>To add remote repository.</td>
             </tr>
             <tr class="info">
@@ -94,7 +112,9 @@
             </tr>
             <tr>
               <td><code class="inline">git commit</code></td>
-              <td>To commit your changes. Doing so launches your editor of choice.</td>
+              <td>
+                To commit your changes. Doing so launches your editor of choice.
+              </td>
             </tr>
             <tr>
               <td><code class="inline">git commit -m [MESSAGE]</code></td>
@@ -142,35 +162,47 @@
             </tr>
             <tr>
               <td><code class="inline">git diff</code></td>
-              <td>To see the differences between working directory and staging area.</td>
+              <td>
+                To see the differences between working directory and staging
+                area.
+              </td>
             </tr>
             <tr>
               <td><code class="inline">git diff --staged</code></td>
-              <td>To see the differences between staging area and last commit.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div><!-- /.c-table-responsive -->
-
-      <!-- FURTHER READING -->
-      <div class="c-table-responsive">
-        <table class="c-table">
-          <caption>Further reading</caption>
-          <tbody>
-            <tr>
               <td>
-                <a href="https://guides.github.com/introduction/git-handbook/">Git Handbook ( From GitHub )</a>
+                To see the differences between staging area and last commit.
               </td>
             </tr>
           </tbody>
         </table>
-      </div><!-- /.c-table-responsive -->
-    </div><!-- /.l-wrap -->
+      </div>
+      <!-- /.c-table-responsive -->
+
+      <!-- Further reading -->
+      <div class="c-table-responsive">
+        <table class="c-table">
+          <caption>
+            Further reading
+          </caption>
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://guides.github.com/introduction/git-handbook/"
+                  >Git Handbook ( From GitHub )</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- /.c-table-responsive -->
+    </div>
+    <!-- /.l-wrap -->
   </section>
 </template>
 
 <script>
-  export default {
-    name: 'Git'
-  }
+export default {
+  name: "Git",
+};
 </script>

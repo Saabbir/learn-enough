@@ -13,15 +13,22 @@
   width: 100%;
 
   caption {
-    font-size: 30px;
+    font-size: 26px;
+    line-height: 32px;
     font-weight: 600;
     text-align: left;
     margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+      font-size: 30px;
+      line-height: 36px;      
+    }
   }
 
   th {
     text-transform: uppercase;
     font-weight: 700;
+    font-size: .9em;
   }
 
   th,
@@ -50,7 +57,12 @@
     text-transform: uppercase;
   }
 
-  thead th {
+  .info td {
+    font-size: .9em;
+    letter-spacing: .1em;
+  }
+
+  th {
     font-weight: 700;
   }
 }

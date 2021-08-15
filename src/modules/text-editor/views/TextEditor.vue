@@ -2,12 +2,16 @@
   <div class="u-section-padding">
     <div class="l-wrap">
       <!-- BACK HOME -->
-      <router-link :to="{ name: 'Home' }" class="u-mb-20">Back home</router-link>
+      <router-link :to="{ name: 'Home' }" class="u-mb-20 u-text-underline"
+        >Back home</router-link
+      >
 
-      <!-- Learn Enough Vim -->
+      <!-- Learn enough Vim -->
       <div class="c-table-responsive">
         <table class="c-table">
-          <caption>Learn Enough Vim</caption>
+          <caption>
+            Learn enough Vim
+          </caption>
           <thead>
             <tr>
               <th>Command</th>
@@ -20,11 +24,17 @@
             </tr>
             <tr>
               <td><code class="inline">i</code></td>
-              <td>Press i to enable insert mode. In this mode you write the normal text.</td>
+              <td>
+                Press i to enable insert mode. In this mode you write the normal
+                text.
+              </td>
             </tr>
             <tr>
               <td><code class="inline">esc</code></td>
-              <td>Press esc to enable normal mode. In this mode you write the vim commands.</td>
+              <td>
+                Press esc to enable normal mode. In this mode you write the vim
+                commands.
+              </td>
             </tr>
             <tr class="info">
               <td colspan="2">Exiting</td>
@@ -44,12 +54,13 @@
           </tbody>
         </table>
       </div>
-    </div><!-- /.l-wrap -->
+    </div>
+    <!-- /.l-wrap -->
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'TextEditor'
-  }
+export default {
+  name: "TextEditor",
+};
 </script>

@@ -1,129 +1,48 @@
 <template>
-  <div class="view-javascript u-bg-grey">
-    <aside class="c-sidenav" ref="sidenav">
-      <ul>
-        <li @click="toggleSidenav" class="o-close-sidenav">Close Sidenav <i class="fas fa-times"></i></li>
-        <li 
-          @click="selectedComponent = 'Introduction'"
-          :class="{active: selectedComponent === 'Introduction'}"
-          >Introduction</li>
-        <li 
-          @click="selectedComponent = 'DataTypes'"
-          :class="{active: selectedComponent === 'DataTypes'}">Data Types</li>
-        <li 
-          @click="selectedComponent = 'Strings'"
-          :class="{active: selectedComponent === 'Strings'}">Strings</li>
-        <li 
-          @click="selectedComponent = 'Functions'"
-          :class="{active: selectedComponent === 'Functions'}">Functions</li>
-        <li 
-          @click="selectedComponent = 'Arrays'"
-          :class="{active: selectedComponent === 'Arrays'}">Arrays</li>
-        <li 
-          @click="selectedComponent = 'Objects'"
-          :class="{active: selectedComponent === 'Objects'}">Objects</li>
-        <li 
-          @click="selectedComponent = 'DOM'"
-          :class="{active: selectedComponent === 'DOM'}">DOM</li>
-        <li 
-          @click="selectedComponent = 'JSON'"
-          :class="{active: selectedComponent === 'JSON'}">JSON</li>
-        <li 
-          @click="selectedComponent = 'UnderTheHood'"
-          :class="{active: selectedComponent === 'UnderTheHood'}">Under the hood concepts</li>
-        <li 
-          @click="selectedComponent = 'ClientSideJS'"
-          :class="{active: selectedComponent === 'ClientSideJS'}">Client Side JavaScript</li>
-        <li 
-          @click="selectedComponent = 'AsyncJS'"
-          :class="{active: selectedComponent === 'AsyncJS'}">Asynchronous JavaScript</li>
-        <li 
-          @click="selectedComponent = 'Resources'"
-          :class="{active: selectedComponent === 'Resources'}">Resources</li>
-        <li>
-          <router-link :to="{ name: 'ES6' }">ES6</router-link>
-        </li>
-        <li>
-          <router-link :to="{ name: 'WholeJavaScript' }">Whole JavaScript</router-link>
-        </li>
-      </ul>
-    </aside>
-    <main>
-      <div class="l-wrap l-wrap--narrow l-wrap--no-padding">
-
-        <!-- Open Sidenav -->
-        <div class="o-toggle-sidenav u-mb-20">
-          <a @click.prevent="toggleSidenav" href="#">View table of contents</a>
+  <div class="u-bg-gray">
+    <div class="l-wrap">
+      <div class="c-content">
+        <Sidenav />
+        <div class="c-content__main c-copy">
+          <h1 class="u-mb-20">Learn enough JavaScript</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+            aperiam a ipsum inventore ullam et voluptatem blanditiis voluptas
+            corrupti officiis quia, fugit dicta? A nobis sequi non impedit minus
+            molestias.
+          </p>
+          <section class="c-box u-mt-20">
+            <h2 class="u-mb-20">Tips and tricks</h2>
+            <blockquote>
+              <p class="u-mb-20">How to remember Operator Precedence?</p>
+              <h4>My Dear Aunt Sally</h4>
+              <p>
+                <strong>M</strong>y ( Multiplication ) <strong>D</strong>ear (
+                Division ) <strong>A</strong>unt ( Addition )
+                <strong>S</strong>ally ( Subtraction )
+              </p>
+            </blockquote>
+          </section>
         </div>
-
-        <!-- Render different component dynamically -->
-        <component :is="selectedComponent"></component>
-
       </div>
-    </main>
+    </div>
   </div>
 </template>
 
 <script>
-  import Arrays         from '../components/Arrays'
-  import AsyncJS        from '../components/AsyncJS'
-  import ClientSideJS   from '../components/ClientSideJS'
-  import DataTypes      from '../components/DataTypes'
-  import Functions      from '../components/Functions'
-  import Introduction   from '../components/Introduction'
-  import JSON           from '../components/JSON'
-  import Objects        from '../components/Objects'
-  import Resources      from '../components/Resources'
-  import Strings        from '../components/Strings'
-  import UnderTheHood   from '../components/UnderTheHood'
-  import DOM            from '../components/DOM'
-
-  export default {
-    name: 'JavaScript',
-    data() {
-      return {
-        selectedComponent: 'Introduction'
-      }
+import Sidenav from "@/modules/javascript/components/Sidenav.vue";
+export default {
+  name: "JavaScript",
+  methods: {
+    toggleSidenav() {
+      this.$refs.sidenav.classList.toggle("c-sidenav--is-open");
     },
-    components: {
-      Arrays,
-      AsyncJS,
-      ClientSideJS,
-      DataTypes,
-      Functions,
-      Introduction,
-      JSON,
-      Objects,
-      Resources,
-      Strings,
-      UnderTheHood,
-      DOM
-    },
-    methods: {
-      toggleSidenav() {
-        this.$refs.sidenav.classList.toggle('c-sidenav--is-open')
-      }
-    },
-    mounted() {
-      window.Prism.highlightAll()
-    }
-  }
+  },
+  components: {
+    Sidenav,
+  },
+  mounted() {
+    window.Prism.highlightAll();
+  },
+};
 </script>
-
-<style lang="scss">
-  .view-javascript {
-    @media (min-width: 1024px) {
-      display: grid;
-      grid-template-columns: 300px 1fr;
-      min-height: calc(100vh - 70px);      
-    }
-
-    main {
-      padding: 3rem 1.5rem;
-
-      @media (min-width: 415px) {
-        padding: 3rem;
-      }
-    }
-  }
-</style>

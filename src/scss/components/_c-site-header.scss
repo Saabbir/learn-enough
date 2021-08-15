@@ -18,29 +18,38 @@
   &__logo {
     margin-right: 30px;
 
-    a {
-      color: #b2bbbd;
-      font-size: 24px;
-      font-weight: bold;
-      height: 70px;
-      display: flex;
-      transition: color 0.3s ease;
-
-      &:hover,
-      &:focus {
-        color: #fff;
-        text-decoration: none;
-      }
-
-      img {
-        align-self: center;
-      }
-    }
-
     @media (min-width: 1024px) {
       margin-right: 15px;
     }
   }
+
+  &__logo-link {
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    img {
+      align-self: center;
+    }
+  }
+  
+  &__logo-text-learn {
+    font-weight: 200;
+  }
+  
+  &__logo-text-enough {
+    font-weight: 700;
+  }  
 
   &__navigation {
     display: flex;

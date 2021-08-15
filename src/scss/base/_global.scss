@@ -1,5 +1,6 @@
 body {
   padding-top: 70px;
+  word-break: break-all;
 }
 
 .site-main {
@@ -48,5 +49,8 @@ code.inline {
   background-color: #f9f2f4;
   padding: 2px 4px;
   border-radius: 4px;
-  white-space: nowrap;
+  
+  @media (min-width: 768px) {
+    white-space: nowrap;
+  }
 }

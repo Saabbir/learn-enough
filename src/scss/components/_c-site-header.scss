@@ -57,91 +57,91 @@
     justify-content: space-between;
     // flex-wrap: wrap;
 
-    ul {
-      &:not(.dropdown) {
-        display: flex;
+    ul:not(.c-dropdown-menu) {
+      display: flex;
+    }
+
+    ul.c-menu a {
+      color: #b2bbbd;
+      line-height: 70px;
+      padding: 0 15px;
+      display: block;
+      transition: 0.2s;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+        text-decoration: none;
+      }
+  
+      &.router-link-exact-active {
+        color: #fff;
+      }      
+    }
+
+    li.active > a {
+      color: #fff;
+    }
+    
+    ul.c-dropdown-menu {
+      padding-left: 1em;
+
+      @media (min-width: 1024px) {
+        padding-left: 0;
+        position: absolute;
+        min-width: 220px;
+        background-color: darken($primaryColor, 5);
+        padding: 10px 0;
+        top: 100%;
+        border-radius: 0 0 4px 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform 0.15s;
+      }
+
+      &.left {
+        @media (min-width: 1024px) {
+          left: 0;
+        }
+      }
+
+      &.right {
+        @media (min-width: 1024px) {
+          right: 0;
+        }
       }
 
       li {
+        margin: 0;
+        padding: 0;
+
         a {
-          color: #b2bbbd;
-          line-height: 70px;
-          padding: 0 15px;
-          display: block;
-          transition: 0.2s;
-
-          &:hover,
-          &:focus {
-            color: #fff;
-            text-decoration: none;
-          }
+          font-size: .9em;
+          white-space: nowrap;
+          line-height: 1.3;
+          padding: 10px 15px;
         }
+      }
+    }    
 
-        &.active > a {
-          color: #fff;
-        }
+    li.c-dropdown-menu-wrapper {
+      position: relative;
+      transition: background-color 0.15s;
+    }
 
-        a.router-link-exact-active {
-          color: #fff;
-        }
+    li.c-dropdown-menu-wrapper:hover {
+      @media (min-width: 1024px) {
+        background-color: darken($primaryColor, 5);
+      }
 
-        &.has-dropdown {
-          position: relative;
-          transition: background-color 0.15s;
+      & > a {
+        color: #fff;
+      }
 
-          ul.dropdown {
-            @media (min-width: 1024px) {
-              position: absolute;
-              width: 220px;
-              background-color: darken($primaryColor, 5);
-              padding: 10px 0;
-              top: 100%;
-              border-radius: 0 0 4px 4px;
-              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-              transform: scale(1, 0);
-              transform-origin: top;
-              transition: transform 0.15s;
-            }
-
-            &.left {
-              @media (min-width: 1024px) {
-                left: 0;
-              }
-            }
-
-            &.right {
-              @media (min-width: 1024px) {
-                right: 0;
-              }
-            }
-
-            li {
-              margin: 0;
-              padding: 0;
-
-              a {
-                @media (min-width: 1024px) {
-                  line-height: 40px;
-                }
-              }
-            }
-          }
-
-          &:hover {
-            @media (min-width: 1024px) {
-              background-color: darken($primaryColor, 5);
-            }
-
-            & > a {
-              color: #fff;
-            }
-
-            ul.dropdown {
-              @media (min-width: 1024px) {
-                transform: scale(1, 1);
-              }
-            }
-          }
+      .c-dropdown-menu {
+        @media (min-width: 1024px) {
+          transform: scale(1, 1);
         }
       }
     }
@@ -191,7 +191,7 @@
         display: block;
       }
 
-      ul.menu {
+      ul.c-menu {
         display: none;
         position: absolute;
         width: 100%;
@@ -200,6 +200,12 @@
         background-color: $primaryColor;
         padding: 15px 0;
         border-top: 1px solid #333;
+        height: auto;
+        max-height: 50vh;
+        overflow-y: auto;
+        z-index: 9;
+
+        @include custom-scrollbar-styles;
 
         li {
           margin: 0;

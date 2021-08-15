@@ -9,7 +9,7 @@
           </router-link>
         </div>
         <button class="toggle-mobile-nav"></button>
-        <ul class="menu">
+        <ul class="c-menu">
           <li>
             <router-link :to="{ name: 'CommandLine' }"
               >Command Line</router-link
@@ -21,8 +21,9 @@
           <li>
             <router-link :to="{ name: 'Git' }">Git</router-link>
           </li>
-          <li>
+          <li class="c-dropdown-menu-wrapper">
             <router-link :to="{ name: 'JavaScript' }">JavaScript</router-link>
+            <Sidenav class="c-dropdown-menu" />
           </li>
           <li>
             <router-link :to="{ name: 'Php' }">PHP</router-link>
@@ -38,15 +39,19 @@
 </template>
 
 <script>
+import Sidenav from "@/modules/javascript/components/Sidenav.vue";
 export default {
   name: "Header",
+  components: {
+    Sidenav,
+  },
   mounted() {
     /**
      * Mobile Menu Functionality
      */
     !(function () {
       const menuToggleBtn = document.querySelector(".toggle-mobile-nav");
-      const menu = document.querySelector(".menu");
+      const menu = document.querySelector(".c-menu");
       menuToggleBtn.addEventListener("click", function () {
         menu.classList.toggle("show");
         this.classList.toggle("active");

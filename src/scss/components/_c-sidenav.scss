@@ -1,4 +1,4 @@
-.c-sidenav {
+ul.c-sidenav:not(.c-dropdown-menu) {
   width: 100%;
   max-width: 300px;
   background-color: transparent;
@@ -7,6 +7,16 @@
   height: calc(100vh - 70px);
   position: sticky;
   top: 70px;
+
+  margin: 0;
+  padding: 16px 0;
+  list-style: none;
+
+  @media (min-width: 768px) {
+    padding: 32px 0;
+  }  
+
+  @include custom-scrollbar-styles;
 
   @media (max-width: 1023px) {
     width: 30rem;
@@ -22,18 +32,8 @@
     transform: translateX(0);
   }
 
-  ul {
-    margin: 0;
-    padding: 16px 0;
-    list-style: none;
-
-    @media (min-width: 768px) {
-      padding: 32px 0;
-    }
-  }
-
-  li:not(.o-close-sidenav):hover a,
-  li:not(.o-close-sidenav).active a {
+  li:hover a,
+  li.active a {
     color: #000;
     background-color: #e0e0e0;
   }

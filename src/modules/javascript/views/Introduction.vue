@@ -41,6 +41,18 @@
               </ul>
             </div>
           </section>
+          <section class="c-box u-mt-20">
+            <h2 class="u-mb-20">Tips and tricks</h2>
+            <blockquote>
+              <p class="u-mb-20">How to remember Operator Precedence?</p>
+              <h4>My Dear Aunt Sally</h4>
+              <p>
+                <strong>M</strong>y ( Multiplication ) <strong>D</strong>ear (
+                Division ) <strong>A</strong>unt ( Addition )
+                <strong>S</strong>ally ( Subtraction )
+              </p>
+            </blockquote>
+          </section>
         </div>
       </div>
     </div>

@@ -40,12 +40,12 @@ export default [
     component: () => import(/* webpackChunkName: "JavaScript_Under_The_Hood" */ '@/modules/javascript/views/UnderTheHood.vue')
   },
   {
-    path: '/javascript/client-side-javascript',
+    path: '/javascript/client-side',
     name: 'JavaScript_Client_Side',
     component: () => import(/* webpackChunkName: "JavaScript_Client_Side" */ '@/modules/javascript/views/ClientSideJS.vue')
   },
   {
-    path: '/javascript/async-js',
+    path: '/javascript/asynchronous',
     name: 'JavaScript_Async',
     component: () => import(/* webpackChunkName: "JavaScript_Async" */ '@/modules/javascript/views/AsyncJS.vue')
   },
@@ -58,10 +58,5 @@ export default [
     path: '/javascript/es6',
     name: 'ES6',
     component: () => import(/* webpackChunkName: "es6" */ '@/modules/javascript/views/ES6.vue')
-  },
-  {
-    path: '/javascript/whole-javascript',
-    name: 'WholeJavaScript',
-    component: () => import(/* webpackChunkName: "whole-javascript" */ '@/modules/javascript/views/WholeJavaScript.vue')
   },
 ]

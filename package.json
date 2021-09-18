@@ -2,6 +2,10 @@
   "name": "learn-enough",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saabbir/learn-enough.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "dev": "npm run serve",

@@ -1,5 +1,5 @@
 <template>
-  <ul :class="'c-sidenav' + this.class" ref="sidenav">
+  <ul :class="'c-sidenav ' + this.className" ref="sidenav">
     <li
       :class="this.$route.path === '/javascript/introduction' ? 'active' : ''"
     >
@@ -65,13 +65,10 @@
 export default {
   name: "JavaScriptSidenav",
   props: {
-    class: {
+    className: {
       type: String,
       default: "",
     },
-  },
-  mounted() {
-    console.log(this.$route.name);
   },
 };
 </script>

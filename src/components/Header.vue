@@ -8,7 +8,7 @@
             <span class="c-site-header__logo-text-enough">Enough</span>
           </router-link>
         </div>
-        <button class="toggle-mobile-nav"></button>
+        <button class="c-toggle-mobile-nav"></button>
         <ul class="c-menu">
           <li>
             <router-link :to="{ name: 'CommandLine' }"
@@ -23,7 +23,7 @@
           </li>
           <li class="c-dropdown-menu-wrapper">
             <router-link :to="{ name: 'JavaScript' }">JavaScript</router-link>
-            <Sidenav class="c-dropdown-menu" />
+            <Sidenav className="c-dropdown-menu" />
           </li>
           <li>
             <router-link :to="{ name: 'Php' }">PHP</router-link>
@@ -50,12 +50,21 @@ export default {
      * Mobile Menu Functionality
      */
     !(function () {
-      const menuToggleBtn = document.querySelector(".toggle-mobile-nav");
+      const menuToggleBtn = document.querySelector(".c-toggle-mobile-nav");
       const menu = document.querySelector(".c-menu");
-      menuToggleBtn.addEventListener("click", function () {
-        menu.classList.toggle("show");
-        this.classList.toggle("active");
-      });
+
+      function hideDropdownMenu() {
+        menu.classList.remove("is-visible");
+        menuToggleBtn.classList.remove('is-active');
+      }
+
+      function toggleDropdownMenu() {
+        menu.classList.toggle("is-visible");
+        menuToggleBtn.classList.toggle('is-active');
+      }
+      
+      menu.querySelectorAll('a').forEach(el => el.addEventListener('click', hideDropdownMenu));
+      menuToggleBtn.addEventListener("click", toggleDropdownMenu);
     })();
   },
 };

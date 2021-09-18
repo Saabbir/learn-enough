@@ -49,8 +49,14 @@ code.inline {
   background-color: #f9f2f4;
   padding: 2px 4px;
   border-radius: 4px;
-  
+
   @media (min-width: 768px) {
     white-space: nowrap;
+  }
+}
+
+@media (max-width: 767px) {
+  pre[class*="language-"].line-numbers > code {
+    white-space: normal;
   }
 }

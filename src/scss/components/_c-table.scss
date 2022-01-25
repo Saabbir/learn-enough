@@ -21,14 +21,15 @@
 
     @media (min-width: 768px) {
       font-size: 30px;
-      line-height: 36px;      
+      line-height: 36px;
     }
   }
 
   th {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: .9em;
+    white-space: nowrap;
+    font-size: 0.9em;
   }
 
   th,
@@ -58,11 +59,11 @@
   }
 
   .info td {
-    font-size: .9em;
-    letter-spacing: .1em;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
   }
 
-  th {
-    font-weight: 700;
-  }
+  // td:last-child {
+  //   min-width: 200px;
+  // }
 }

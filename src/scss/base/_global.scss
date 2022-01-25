@@ -1,6 +1,6 @@
 body {
   padding-top: 70px;
-  word-break: break-all;
+  word-break: break-word;
 }
 
 .site-main {
@@ -55,8 +55,8 @@ code.inline {
   }
 }
 
-@media (max-width: 767px) {
-  pre[class*="language-"].line-numbers > code {
-    white-space: normal;
-  }
-}
+// @media (max-width: 767px) {
+//   pre[class*="language-"].line-numbers > code {
+//     white-space: normal;
+//   }
+// }
